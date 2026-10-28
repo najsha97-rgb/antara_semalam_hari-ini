@@ -10,7 +10,7 @@
   <title>Antara Semalam dan Hari Ini | Imam Hasan al-Banna</title>
 
   <link rel="manifest" href="./manifest.json">
-  <link rel="stylesheet" href="./css/style.css?v=20261028_v29">
+  <link rel="stylesheet" href="./css/style.css?v=20261028_v30">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +30,7 @@
     </div>
 
     <div class="header-controls">
+      <button class="btn-icon" id="btnHeaderSearch" title="Carian Pantas">🔍</button>
       <button class="btn-icon" id="btnFontDec" title="Kecilkan Fon">A-</button>
       <button class="btn-icon" id="btnFontInc" title="Besarkan Fon">A+</button>
       <button class="btn-icon" id="themeToggle" title="Tukar Tema">🌙</button>
@@ -45,7 +46,8 @@
       <!-- Search -->
       <div class="sidebar-search-box">
         <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" placeholder="Cari bab, kata kunci atau dalil...">
+        <input type="text" id="searchInput" placeholder="Cari bab, kata kunci atau dalil..." autocomplete="off">
+        <button class="btn-clear-search" id="btnClearSearch" title="Padam carian" style="display: none;">✕</button>
       </div>
 
       <!-- Mode Selector Pills -->
@@ -106,9 +108,9 @@
   </div>
 
   <!-- PWA Data Script -->
-  <script src="./data/antara_semalam_data.js?v=20261028_v29"></script>
+  <script src="./data/antara_semalam_data.js?v=20261028_v30"></script>
   <!-- Main Application Script -->
-  <script src="./js/app.js?v=20261028_v29"></script>
+  <script src="./js/app.js?v=20261028_v30"></script>
 
   <!-- Service Worker Registration -->
   <script>

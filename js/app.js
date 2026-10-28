@@ -24,6 +24,8 @@
   const btnFontInc = document.getElementById('btnFontInc');
   const btnFontDec = document.getElementById('btnFontDec');
   const searchInput = document.getElementById('searchInput');
+  const btnClearSearch = document.getElementById('btnClearSearch');
+  const btnHeaderSearch = document.getElementById('btnHeaderSearch');
   const chapterAccordion = document.getElementById('chapterAccordion');
 
   const btnModePenuh = document.getElementById('btnModePenuh');
@@ -250,11 +252,39 @@
     btnModeRingkasan.addEventListener('click', () => switchMode('layer2'));
     btnModeHikmah.addEventListener('click', () => switchMode('layer3'));
 
-    // Search Input
+    // Search Input & Controls
     if (searchInput) {
       searchInput.addEventListener('input', (e) => {
-        state.searchQuery = e.target.value.trim().toLowerCase();
-        renderSidebar();
+        const q = e.target.value.trim();
+        state.searchQuery = q.toLowerCase();
+        if (btnClearSearch) {
+          btnClearSearch.style.display = q ? 'block' : 'none';
+        }
+        if (q.length >= 2) {
+          const results = executeSearch(q);
+          renderSearchResultsView(results, q);
+        } else {
+          renderSidebar();
+        }
+      });
+    }
+
+    if (btnClearSearch) {
+      btnClearSearch.addEventListener('click', clearSearchState);
+    }
+
+    if (btnHeaderSearch) {
+      btnHeaderSearch.addEventListener('click', () => {
+        if (appSidebar) {
+          appSidebar.classList.add('open');
+        }
+        if (sidebarBackdrop) {
+          sidebarBackdrop.classList.add('show');
+        }
+        if (searchInput) {
+          searchInput.focus();
+          searchInput.select();
+        }
       });
     }
 
@@ -285,6 +315,304 @@
       closeSidebarMobile();
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ==========================================================================
+  // ENJIN CARIAN PINTAR (FULL-TEXT SEARCH ENGINE)
+  // ==========================================================================
+
+  function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  function highlightMatches(text, query) {
+    if (!query || !text) return escapeHtml(text);
+    const escapedText = escapeHtml(text);
+    const escapedQuery = escapeHtml(query);
+    const regex = new RegExp(`(${escapeRegExp(escapedQuery)})`, 'gi');
+    return escapedText.replace(regex, '<mark class="search-match">$1</mark>');
+  }
+
+  function getSnippet(fullText, query, length = 110) {
+    if (!fullText) return '';
+    const cleanText = fullText.replace(/<!--.*?-->/g, '').replace(/^>\s*/, '').trim();
+    const lower = cleanText.toLowerCase();
+    const qLower = query.toLowerCase();
+    const idx = lower.indexOf(qLower);
+
+    let start = 0;
+    let end = cleanText.length;
+
+    if (idx !== -1) {
+      start = Math.max(0, idx - 25);
+      end = Math.min(cleanText.length, idx + query.length + 65);
+    } else {
+      end = Math.min(cleanText.length, length);
+    }
+
+    let snippet = cleanText.substring(start, end);
+    if (start > 0) snippet = '...' + snippet;
+    if (end < cleanText.length) snippet = snippet + '...';
+
+    return highlightMatches(snippet, query);
+  }
+
+  function executeSearch(query) {
+    if (!query || query.length < 2 || !appData) return [];
+    const q = query.toLowerCase();
+    const results = [];
+
+    // 1. Cari dalam Bab & Subtopik (Versi Penuh)
+    if (appData.chapters) {
+      appData.chapters.forEach((ch, chIdx) => {
+        ch.subtopics.forEach((sub, sIdx) => {
+          const subTitleMatch = (sub.title && sub.title.toLowerCase().includes(q)) || 
+                                (sub.menu_title && sub.menu_title.toLowerCase().includes(q));
+
+          let matchedParagraphs = 0;
+          if (sub.paragraphs) {
+            sub.paragraphs.forEach((p, pIdx) => {
+              const pClean = p.trim();
+              if (!pClean || pClean.startsWith('<!-- PAGE') || (pClean.startsWith('*<!--') && pClean.endsWith('-->*'))) return;
+
+              if (pClean.toLowerCase().includes(q)) {
+                matchedParagraphs++;
+                results.push({
+                  type: 'bab',
+                  badge: ch.number,
+                  title: `${ch.title} — ${sub.menu_title || sub.title}`,
+                  chIdx: chIdx,
+                  sIdx: sIdx,
+                  pIdx: pIdx,
+                  snippet: getSnippet(pClean, query),
+                  rawText: pClean
+                });
+              }
+            });
+          }
+
+          // Jika hanya tajuk subtopik yang sepadan
+          if (subTitleMatch && matchedParagraphs === 0) {
+            results.push({
+              type: 'bab',
+              badge: ch.number,
+              title: `${ch.title} — ${sub.menu_title || sub.title}`,
+              chIdx: chIdx,
+              sIdx: sIdx,
+              pIdx: 0,
+              snippet: highlightMatches(sub.title, query),
+              rawText: sub.title
+            });
+          }
+        });
+      });
+    }
+
+    // 2. Cari dalam Ringkasan 27 Prinsip
+    if (appData.ringkasan_27) {
+      appData.ringkasan_27.forEach((item) => {
+        if (item.text.toLowerCase().includes(q)) {
+          results.push({
+            type: 'ringkasan',
+            badge: `Prinsip ${item.num}`,
+            title: `Ringkasan Prinsip ke-${item.num}`,
+            ringkasanNum: item.num,
+            snippet: getSnippet(item.text, query),
+            rawText: item.text
+          });
+        }
+      });
+    }
+
+    // 3. Cari dalam Mutiara Kata (Quotes)
+    if (appData.quotes) {
+      appData.quotes.forEach((item) => {
+        const full = `${item.topic} ${item.text} ${item.lesson} ${item.author}`;
+        if (full.toLowerCase().includes(q)) {
+          results.push({
+            type: 'hikmah',
+            badge: item.topic || 'Mutiara',
+            title: `Mutiara Hikmah — ${item.topic}`,
+            quoteId: item.id,
+            snippet: getSnippet(`"${item.text}" — Iktibar: ${item.lesson}`, query),
+            rawText: item.text
+          });
+        }
+      });
+    }
+
+    return results;
+  }
+
+  function renderSearchResultsView(results, query) {
+    chapterAccordion.innerHTML = '';
+
+    const summaryBox = document.createElement('div');
+    summaryBox.className = 'search-results-summary';
+    summaryBox.innerHTML = `
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 0.8rem; font-weight: 700; color: var(--gold-primary);">
+          HASIL CARIAN (${results.length})
+        </span>
+        <button class="btn-clear-results" id="btnDismissSearch">Kosongkan</button>
+      </div>
+      <div style="font-size: 0.78rem; color: var(--text-secondary); margin-top: 4px;">
+        Kata kunci: <strong>"${escapeHtml(query)}"</strong>
+      </div>
+    `;
+    chapterAccordion.appendChild(summaryBox);
+
+    const btnDismiss = summaryBox.querySelector('#btnDismissSearch');
+    if (btnDismiss) {
+      btnDismiss.addEventListener('click', clearSearchState);
+    }
+
+    if (results.length === 0) {
+      const emptyBox = document.createElement('div');
+      emptyBox.className = 'search-empty-box';
+      emptyBox.innerHTML = `
+        <div style="font-size: 1.8rem; margin-bottom: 8px;">🔍</div>
+        <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px;">Tiada Padanan Ditemui</div>
+        <div style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4;">
+          Cuba gunakan perkataan yang lebih umum seperti <em>dakwah</em>, <em>jihad</em>, <em>iman</em>, atau <em>umat</em>.
+        </div>
+      `;
+      chapterAccordion.appendChild(emptyBox);
+      return;
+    }
+
+    const listContainer = document.createElement('div');
+    listContainer.className = 'search-results-list';
+
+    results.forEach((res) => {
+      const card = document.createElement('div');
+      card.className = 'search-result-card';
+      card.tabIndex = 0;
+
+      let typeLabel = 'Perenggan Teks';
+      if (res.type === 'ringkasan') typeLabel = '27 Prinsip';
+      else if (res.type === 'hikmah') typeLabel = 'Mutiara Kata';
+
+      card.innerHTML = `
+        <div class="search-card-header">
+          <span class="search-badge">${escapeHtml(res.badge)}</span>
+          <span class="search-match-type">${typeLabel}</span>
+        </div>
+        <div class="search-card-title">${escapeHtml(res.title)}</div>
+        <div class="search-card-snippet">${res.snippet}</div>
+      `;
+
+      card.addEventListener('click', () => {
+        navigateToSearchResult(res, query);
+      });
+
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          navigateToSearchResult(res, query);
+        }
+      });
+
+      listContainer.appendChild(card);
+    });
+
+    chapterAccordion.appendChild(listContainer);
+  }
+
+  function clearSearchState() {
+    state.searchQuery = '';
+    if (searchInput) searchInput.value = '';
+    if (btnClearSearch) btnClearSearch.style.display = 'none';
+    renderSidebar();
+    if (searchInput) searchInput.focus();
+  }
+
+  function highlightTargetElementContent(targetEl, query) {
+    if (!targetEl || !query) return;
+    const bq = targetEl.querySelector('blockquote');
+    if (bq) {
+      bq.innerHTML = highlightMatches(bq.textContent, query);
+    } else if (targetEl.tagName === 'P' || targetEl.tagName === 'H4') {
+      targetEl.innerHTML = highlightMatches(targetEl.textContent, query);
+    }
+  }
+
+  function navigateToSearchResult(res, query) {
+    if (res.type === 'bab') {
+      if (state.mode !== 'layer1') {
+        state.mode = 'layer1';
+        btnModePenuh.classList.add('active');
+        btnModeRingkasan.classList.remove('active');
+        btnModeHikmah.classList.remove('active');
+      }
+      state.currentChapter = res.chIdx;
+      state.currentSubtopic = res.sIdx;
+      renderContent();
+
+      if (window.innerWidth <= 900) {
+        closeSidebarMobile();
+      }
+
+      setTimeout(() => {
+        const targetEl = articleContent.querySelector(`[data-pidx="${res.pIdx}"]`);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          targetEl.classList.remove('pulse-highlight');
+          void targetEl.offsetWidth;
+          targetEl.classList.add('pulse-highlight');
+          highlightTargetElementContent(targetEl, query);
+          setTimeout(() => targetEl.classList.remove('pulse-highlight'), 3500);
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }, 100);
+
+    } else if (res.type === 'ringkasan') {
+      switchMode('layer2');
+      if (window.innerWidth <= 900) {
+        closeSidebarMobile();
+      }
+      setTimeout(() => {
+        const card = ringkasanSection.querySelector(`[data-ringkasan-num="${res.ringkasanNum}"]`);
+        if (card) {
+          card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          card.classList.remove('pulse-highlight');
+          void card.offsetWidth;
+          card.classList.add('pulse-highlight');
+          const txtEl = card.querySelector('.ringkasan-text');
+          if (txtEl) {
+            txtEl.innerHTML = highlightMatches(txtEl.textContent, query);
+          }
+          setTimeout(() => card.classList.remove('pulse-highlight'), 3500);
+        }
+      }, 100);
+
+    } else if (res.type === 'hikmah') {
+      switchMode('layer3');
+      if (window.innerWidth <= 900) {
+        closeSidebarMobile();
+      }
+      setTimeout(() => {
+        const card = hikmahSection.querySelector(`[data-quote-id="${res.quoteId}"]`);
+        if (card) {
+          card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          card.classList.remove('pulse-highlight');
+          void card.offsetWidth;
+          card.classList.add('pulse-highlight');
+          const qText = card.querySelector('.hikmah-quote-text');
+          if (qText) {
+            qText.innerHTML = `"${highlightMatches(qText.textContent.replace(/^"|"$/g, ''), query)}"`;
+          }
+          setTimeout(() => card.classList.remove('pulse-highlight'), 3500);
+        }
+      }, 100);
+    }
   }
 
   // Render Sidebar Tree
@@ -423,18 +751,20 @@
 
     // Render Perenggan
     articleContent.innerHTML = '';
-    sub.paragraphs.forEach(p => {
+    sub.paragraphs.forEach((p, pIdx) => {
       const pClean = p.trim();
       if (!pClean) return;
 
       if (pClean.startsWith('<!-- PAGE') || (pClean.startsWith('*<!--') && pClean.endsWith('-->*'))) {
         const pageBadge = document.createElement('div');
+        pageBadge.setAttribute('data-pidx', pIdx);
         pageBadge.style.margin = '2rem 0 1rem 0';
         pageBadge.style.textAlign = 'center';
         pageBadge.innerHTML = `<span style="background: rgba(52, 211, 153, 0.15); color: var(--emerald-light); font-size: 0.76rem; font-weight: 700; padding: 3px 12px; border-radius: 9999px; border: 1px solid rgba(52, 211, 153, 0.3);">${pClean.replace(/\*|<!--|-->/g, '').trim()}</span>`;
         articleContent.appendChild(pageBadge);
       } else if (pClean.startsWith('"') || pClean.startsWith('“') || pClean.startsWith('”') || pClean.startsWith('«') || pClean.startsWith('> ')) {
         const quoteWrapper = document.createElement('div');
+        quoteWrapper.setAttribute('data-pidx', pIdx);
         quoteWrapper.className = 'quote-wrapper';
 
         const quoteBox = document.createElement('blockquote');
@@ -455,6 +785,7 @@
         articleContent.appendChild(quoteWrapper);
       } else if (/^(?:i|ii|iii|iv|v|vi|vii)\)/i.test(pClean)) {
         const h4El = document.createElement('h4');
+        h4El.setAttribute('data-pidx', pIdx);
         h4El.style.color = 'var(--gold-primary)';
         h4El.style.fontSize = '1.1rem';
         h4El.style.fontWeight = '700';
@@ -465,6 +796,7 @@
         articleContent.appendChild(h4El);
       } else {
         const paraEl = document.createElement('p');
+        paraEl.setAttribute('data-pidx', pIdx);
         paraEl.textContent = pClean;
         articleContent.appendChild(paraEl);
       }
@@ -544,6 +876,7 @@
       items.forEach(it => {
         const card = document.createElement('div');
         card.className = 'ringkasan-item';
+        card.setAttribute('data-ringkasan-num', it.num);
         card.innerHTML = `
           <div class="ringkasan-num-badge">${it.num}</div>
           <div class="ringkasan-text" style="color: var(--text-primary); font-size: 1rem; line-height: 1.8; flex: 1;">
@@ -602,6 +935,7 @@
       appData.quotes.forEach(q => {
         const card = document.createElement('div');
         card.className = 'hikmah-card';
+        card.setAttribute('data-quote-id', q.id);
         card.innerHTML = `
           <div>
             <div class="hikmah-badge">${q.topic}</div>
