@@ -300,8 +300,6 @@
     ringkasanSection.style.display = 'block';
     bottomNav.style.display = 'none';
 
-    // Cari bab terakhir (Bab 12) yang mengandungi ringkasan 27 perkara
-    const lastCh = appData.chapters[appData.chapters.length - 1];
     ringkasanSection.innerHTML = '';
 
     const introBox = document.createElement('div');
@@ -311,31 +309,53 @@
     introBox.style.padding = '1.25rem 1.5rem';
     introBox.style.marginBottom = '2rem';
     introBox.innerHTML = `
-      <p style="font-weight: 600; color: var(--gold-primary); margin-bottom: 0.4rem;">💡 Rumusan Asas Perjuangan:</p>
-      <p style="font-size: 0.95rem; color: var(--text-secondary);">Berikut adalah 27 rumusan padat yang disusun khas oleh Al-Imam Hasan al-Banna pada penghujung risalah ini sebagai garis panduan utama para aktivis dakwah.</p>
+      <p style="font-weight: 700; color: var(--gold-primary); margin-bottom: 0.4rem; font-size: 1.05rem;">💡 Rumusan 27 Prinsip Kebangkitan:</p>
+      <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">Berikut adalah rumusan padat 27 prinsip yang digariskan oleh Al-Imam Hasan al-Banna di bahagian akhir risalah 'Antara Semalam dan Hari Ini' sebagai panduan kebangkitan umat, tersusun rapi dari nombor 1 hingga 27 dari atas ke bawah.</p>
     `;
     ringkasanSection.appendChild(introBox);
 
     const listContainer = document.createElement('div');
+    listContainer.className = 'ringkasan-list';
     listContainer.style.display = 'flex';
     listContainer.style.flexDirection = 'column';
     listContainer.style.gap = '1rem';
 
-    if (lastCh && lastCh.subtopics) {
-      lastCh.subtopics.forEach(st => {
-        st.paragraphs.forEach(p => {
-          if (p.trim() && !p.startsWith('<!-- PAGE')) {
-            const card = document.createElement('div');
-            card.style.background = 'var(--bg-card)';
-            card.style.border = '1px solid var(--border-color)';
-            card.style.borderRadius = '12px';
-            card.style.padding = '1.15rem 1.4rem';
-            card.style.lineHeight = '1.8';
-            card.innerHTML = `<span style="color: var(--gold-primary); font-weight: 700; margin-right: 8px;">📌</span> ${p}`;
-            listContainer.appendChild(card);
-          }
-        });
+    const items = (appData.ringkasan_27 && appData.ringkasan_27.length > 0) 
+      ? appData.ringkasan_27 
+      : [];
+
+    if (items.length > 0) {
+      items.forEach(it => {
+        const card = document.createElement('div');
+        card.className = 'ringkasan-item';
+        card.innerHTML = `
+          <div class="ringkasan-num-badge">${it.num}</div>
+          <div class="ringkasan-text" style="color: var(--text-primary); font-size: 1rem; line-height: 1.8; flex: 1;">
+            ${it.text}
+          </div>
+        `;
+        listContainer.appendChild(card);
       });
+    } else {
+      // Fallback sekiranya tiada array ringkasan_27
+      const lastCh = appData.chapters[appData.chapters.length - 1];
+      if (lastCh && lastCh.subtopics) {
+        let count = 1;
+        lastCh.subtopics.forEach(st => {
+          st.paragraphs.forEach(p => {
+            const pClean = p.trim();
+            if (pClean && !pClean.startsWith('<!-- PAGE')) {
+              const card = document.createElement('div');
+              card.className = 'ringkasan-item';
+              card.innerHTML = `
+                <div class="ringkasan-num-badge">${count++}</div>
+                <div class="ringkasan-text" style="color: var(--text-primary); font-size: 1rem; line-height: 1.8; flex: 1;">${pClean}</div>
+              `;
+              listContainer.appendChild(card);
+            }
+          });
+        });
+      }
     }
 
     ringkasanSection.appendChild(listContainer);
