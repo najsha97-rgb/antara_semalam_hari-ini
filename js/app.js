@@ -281,6 +281,16 @@
         const quoteBox = document.createElement('blockquote');
         quoteBox.textContent = pClean.replace(/^>\s*/, '');
         articleContent.appendChild(quoteBox);
+      } else if (/^(?:i|ii|iii|iv|v|vi|vii)\)/i.test(pClean)) {
+        const h4El = document.createElement('h4');
+        h4El.style.color = 'var(--gold-primary)';
+        h4El.style.fontSize = '1.1rem';
+        h4El.style.fontWeight = '700';
+        h4El.style.margin = '2.2rem 0 0.75rem 0';
+        h4El.style.paddingBottom = '6px';
+        h4El.style.borderBottom = '1px solid rgba(245, 197, 66, 0.25)';
+        h4El.textContent = pClean;
+        articleContent.appendChild(h4El);
       } else {
         const paraEl = document.createElement('p');
         paraEl.textContent = pClean;
