@@ -1,4 +1,4 @@
-const CACHE_NAME = 'antara-semalam-v5-bab2-clean-20261028';
+const CACHE_NAME = 'antara-semalam-v6-ejaan-20261028';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
