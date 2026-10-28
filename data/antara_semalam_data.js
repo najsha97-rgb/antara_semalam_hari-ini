@@ -238,10 +238,12 @@ window.ANTARA_SEMALAM_DATA = {
         },
         {
           "id": "c6_s6",
-          "title": "(f) Perang baru.",
-          "menu_title": "Perang Baru.",
+          "title": "(f) Perang Baru",
+          "menu_title": "Perang Baru",
           "paragraphs": [
-            "Negara-negara Eropah telah keluar dari kancah perang dunia tetapi bibit dengki dan benci masih berakar umbi di dalam dada mereka. Perjanjian-perjanjian damai telah memberikan satu tamparan hebat bagi kebanyakan negara-negara ini. Keadaan ini telah membawa kepada lahirnya idea-idea baru dan prinsip-prinsip fanatik yang ekstrim. Ini sudah tentu akan berkesudahan di kalangan bangsa ini (Eropah) satu krisis baru dan perang yang akan menghancur lebur kesatuan mereka dan akan menyedarkan semula mereka bagi membuang kezaliman yang mereka lakukan itu. Umat Islam sekali lagi di kurniakan peluang untuk menyatukan barisan mereka dan berkumpul, melengkapkan kemerdekaan mereka dan mengembalikan negara dan kesatuan mereka di bawah panji-panji Amirul-Mukminin. Firman Allah yang bermaksud: \"Dan kami hendak memberi kurnia kepada orang-orang yang tertindas di bumi (Mesir) itu dan hendak menjadikan mereka pemimpin dan menjadikan mereka orang-orang yang mewarisi (bumi) (al Qasas:5)."
+            "Negara-negara Eropah telah keluar daripada kancah perang dunia tetapi bibit dengki dan benci masih berakar umbi dalam dada mereka. Perjanjian-perjanjian damai telah memberikan satu tamparan hebat bagi kebanyakan negara-negara ini. Keadaan ini telah membawa kepada lahirnya idea-idea baru dan prinsip-prinsip fanatik yang ekstrim. Ini sudah tentu akan berkesudahan dalam kalangan bangsa Eropah satu krisis baru dan perang yang akan menghancur lebur kesatuan mereka dan akan menyedarkan semula mereka bagi membuang kezaliman yang mereka lakukan itu. Umat Islam sekali lagi dikurniakan peluang untuk menyatukan barisan mereka dan berkumpul, melengkapkan kemerdekaan mereka dan mengembalikan negara dan kesatuan mereka di bawah panji-panji Amirul-Mukminin.",
+            "Firman Allah yang bermaksud:",
+            "\"Dan Kami hendak memberi kurnia kepada orang-orang yang tertindas di bumi (Mesir) itu dan hendak menjadikan mereka pemimpin dan menjadikan mereka orang-orang yang mewarisi (bumi)\". (al-Qasas:5)"
           ]
         }
       ]
