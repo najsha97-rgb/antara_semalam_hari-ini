@@ -646,6 +646,74 @@ body {
 /* ==========================================================================
    UTILITI SALIN TEKS (COPY UTILITIES) & TOAST NOTIFICATION
    ========================================================================== */
+.ringkasan-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1.1rem;
+}
+
+.btn-action-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(5, 150, 105, 0.15);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  color: var(--emerald-light);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.btn-action-pill:hover {
+  background: rgba(5, 150, 105, 0.3);
+  border-color: var(--gold-primary);
+  color: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.25);
+}
+
+.btn-action-pill.btn-primary-pill {
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.2), rgba(5, 150, 105, 0.3));
+  border-color: var(--gold-primary);
+  color: var(--gold-light);
+  box-shadow: 0 2px 10px rgba(245, 197, 66, 0.15);
+}
+
+.btn-action-pill.btn-primary-pill:hover {
+  background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+  color: #071714;
+  box-shadow: 0 4px 16px rgba(245, 197, 66, 0.35);
+}
+
+.btn-sidebar-download {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.2), rgba(5, 150, 105, 0.3));
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-light);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 9px 14px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-sidebar-download:hover {
+  background: var(--gold-primary);
+  color: #071714;
+  box-shadow: 0 4px 14px rgba(245, 197, 66, 0.3);
+}
+
 .article-content,
 .article-content p,
 .article-content blockquote,
@@ -760,4 +828,61 @@ body {
 .app-toast.show {
   transform: translateX(-50%) translateY(0);
   opacity: 1;
+}
+
+/* ==========================================================================
+   PRINT / PDF STYLES
+   ========================================================================== */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+  .top-header,
+  .app-sidebar,
+  .bottom-nav-bar,
+  .btn-copy-section,
+  .btn-item-copy,
+  .btn-quote-copy,
+  .ringkasan-action-bar,
+  .app-toast {
+    display: none !important;
+  }
+  .app-container,
+  .reader-main,
+  #ringkasanSection {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .chapter-hero-banner {
+    background: none !important;
+    border: none !important;
+    padding: 0 0 1rem 0 !important;
+    box-shadow: none !important;
+  }
+  .chapter-hero-banner::before {
+    display: none !important;
+  }
+  .hero-main-title {
+    color: #065f46 !important;
+    font-size: 1.6rem !important;
+  }
+  .hero-arabic-title {
+    color: #92400e !important;
+  }
+  .ringkasan-item {
+    background: #f9fafb !important;
+    border: 1px solid #d1d5db !important;
+    color: #111827 !important;
+    page-break-inside: avoid;
+    margin-bottom: 0.75rem;
+    box-shadow: none !important;
+  }
+  .ringkasan-num-badge {
+    background: #047857 !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+  }
 }

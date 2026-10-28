@@ -114,6 +114,44 @@
     copyToClipboard(textToCopy, `Teks ${sub.menu_title || 'bab'} berjaya disalin!`);
   }
 
+  function downloadRingkasanFile() {
+    if (!appData) return;
+    const items = (appData.ringkasan_27 && appData.ringkasan_27.length > 0) ? appData.ringkasan_27 : [];
+    if (!items.length) {
+      showToast('Tiada data ringkasan untuk dimuat turun.');
+      return;
+    }
+
+    let content = `========================================================================\n`;
+    content += `        INTISARI ILMIAH: ANTARA SEMALAM DAN HARI INI                    \n`;
+    content += `        (Bayna al-Amsi wa al-Yawm - بين الأمس واليوم)                   \n`;
+    content += `   Ringkasan 27 Prinsip Kebangkitan & Penyelamat Umat Islam             \n`;
+    content += `        Pengarang: Al-Imam Asy-Syahid Hasan al-Banna                    \n`;
+    content += `========================================================================\n\n`;
+
+    items.forEach(it => {
+      content += `${it.num}. ${it.text}\n\n`;
+    });
+
+    content += `========================================================================\n`;
+    content += `Diterbitkan melalui Aplikasi Rasmi PWA:                                \n`;
+    content += `https://najsha97-rgb.github.io/antara_semalam_hari-ini/                 \n`;
+    content += `Tarikh Muat Turun: ${new Date().toLocaleDateString('ms-MY')}           \n`;
+    content += `========================================================================\n`;
+
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `Ringkasan_27_Prinsip_Antara_Semalam_dan_Hari_Ini.txt`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+
+    showToast('Fail Ringkasan berjaya dimuat turun!');
+  }
+
   // Initialize Theme
   document.documentElement.setAttribute('data-theme', state.theme);
 
@@ -240,10 +278,18 @@
     if (state.mode === 'layer2') {
       // Mod Ringkasan
       chapterAccordion.innerHTML = `
-        <div style="padding: 10px; font-size: 0.88rem; color: var(--emerald-light);">
-          📋 <strong>Ringkasan 27 Prinsip Risalah</strong>
+        <div style="padding: 12px; font-size: 0.88rem; color: var(--emerald-light); line-height: 1.6;">
+          <div style="font-weight: 700; color: var(--gold-primary); margin-bottom: 4px;">📋 27 Prinsip Risalah</div>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 12px;">Peta panduan kebangkitan umat oleh Al-Imam Hasan al-Banna.</p>
+          <button class="btn-sidebar-download" id="sidebarDownloadBtn" title="Muat turun fail ringkasan">
+            <span>📥</span> Muat Turun Fail
+          </button>
         </div>
       `;
+      const sBtn = document.getElementById('sidebarDownloadBtn');
+      if (sBtn) {
+        sBtn.addEventListener('click', downloadRingkasanFile);
+      }
       return;
     }
 
@@ -416,11 +462,30 @@
       <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">Berikut adalah rumusan padat 27 prinsip yang digariskan oleh Al-Imam Hasan al-Banna di bahagian akhir risalah 'Antara Semalam dan Hari Ini' sebagai panduan kebangkitan umat, tersusun rapi dari nombor 1 hingga 27 dari atas ke bawah.</p>
     `;
 
-    const copyAllBtn = document.createElement('button');
-    copyAllBtn.className = 'btn-copy-section';
-    copyAllBtn.style.marginTop = '0.9rem';
-    copyAllBtn.innerHTML = '<span class="copy-icon">📋</span> <span class="copy-text">Salin Semua 27 Prinsip</span>';
-    copyAllBtn.addEventListener('click', () => {
+    const items = (appData.ringkasan_27 && appData.ringkasan_27.length > 0) 
+      ? appData.ringkasan_27 
+      : [];
+
+    const actionBar = document.createElement('div');
+    actionBar.className = 'ringkasan-action-bar';
+    actionBar.innerHTML = `
+      <button class="btn-action-pill" id="btnCopyAllRingkasan" title="Salin semua 27 prinsip ke papan keratan">
+        <span>📋</span> Salin Semua
+      </button>
+      <button class="btn-action-pill btn-primary-pill" id="btnDownloadRingkasan" title="Muat turun ringkasan dalam format fail teks">
+        <span>📥</span> Muat Turun Fail (.txt)
+      </button>
+      <button class="btn-action-pill" id="btnPrintRingkasan" title="Cetak atau simpan sebagai dokumen PDF">
+        <span>🖨️</span> Cetak / Simpan PDF
+      </button>
+    `;
+    introBox.appendChild(actionBar);
+
+    const btnCopyAll = actionBar.querySelector('#btnCopyAllRingkasan');
+    const btnDown = actionBar.querySelector('#btnDownloadRingkasan');
+    const btnPrint = actionBar.querySelector('#btnPrintRingkasan');
+
+    btnCopyAll.addEventListener('click', () => {
       let allText = `📋 RINGKASAN 27 PRINSIP: ANTARA SEMALAM DAN HARI INI\n`;
       allText += `Al-Imam Asy-Syahid Hasan al-Banna\n`;
       allText += `────────────────────────────────\n\n`;
@@ -430,7 +495,9 @@
       allText += `🔗 https://najsha97-rgb.github.io/antara_semalam_hari-ini/`;
       copyToClipboard(allText, 'Semua 27 Prinsip berjaya disalin!');
     });
-    introBox.appendChild(copyAllBtn);
+
+    btnDown.addEventListener('click', downloadRingkasanFile);
+    btnPrint.addEventListener('click', () => window.print());
 
     ringkasanSection.appendChild(introBox);
 
@@ -439,10 +506,6 @@
     listContainer.style.display = 'flex';
     listContainer.style.flexDirection = 'column';
     listContainer.style.gap = '1rem';
-
-    const items = (appData.ringkasan_27 && appData.ringkasan_27.length > 0) 
-      ? appData.ringkasan_27 
-      : [];
 
     if (items.length > 0) {
       items.forEach(it => {

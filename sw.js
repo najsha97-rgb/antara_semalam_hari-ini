@@ -1,4 +1,4 @@
-const CACHE_NAME = 'antara-semalam-v26-copy-dan-murni27-20261028';
+const CACHE_NAME = 'antara-semalam-v27-download-ringkasan-20261028';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
