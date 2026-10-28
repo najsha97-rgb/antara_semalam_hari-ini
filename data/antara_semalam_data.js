@@ -40,7 +40,10 @@ window.ANTARA_SEMALAM_DATA = {
           "title": "Teks Utama: Manhaj Al-Quran dalam Memperbaiki Masyarakat",
           "menu_title": "Manhaj Al-Quran dalam Memperbaiki Masyarakat",
           "paragraphs": [
-            "Al Quran adalah penghimpun segala cara untuk membaiki masyarakat. Ia telah diturunkan ke atas Nabi saw. Ianya dibacakan kepada orang-orang mukmin dari masa ke semasa menurut keadaan, suasana dan sempena. Firman Allah, maksudnya. \"Demikianlah supaya kami perkuat hati mu denganNya dan Kami (menurunkanNya) dan membacakanNya kelompok demi kelompok. Tidaklah orang-orang kafir itu datang kepadamu (membawa sesuatu yang ganjil) melainkan Kami datangkan kepada mu suatu yang benar dan yang paling baik penjelasannya\". (al Furqaan:32-33). Apabila sempurna wahyu itu diturunkan dan dipelihara di setiap dada dan pada mashaf-mashaf dalam masa lebih kurang dua puluh dua tahun, Allah telah kumpulkan di dalamnya penjelasan tiap-tiap perkara untuk umat ini. Dasar-dasar pembaikian dan pengislahan masyarakat yang sempurna yang didatangkan oleh al Quran itu berlegar dibawah qaidah-qaidah ini:"
+            "Al-Quran adalah penghimpun segala cara dan kaedah untuk membaiki masyarakat secara menyeluruh. Ia telah diturunkan ke atas Nabi SAW secara beransur-ansur kemudian dibacakan kepada orang-orang mukmin dari masa ke semasa menurut keadaan, suasana dan sempena.",
+            "Firman Allah, maksudnya:",
+            "\"Demikianlah supaya kami perkuat hati mu denganNya dan Kami (menurunkanNya) dan membacakanNya kelompok demi kelompok. Tidaklah orang-orang kafir itu datang kepadamu (membawa sesuatu yang ganjil) melainkan Kami datangkan kepada mu suatu yang benar dan yang paling baik penjelasannya\". (al Furqaan:32-33).",
+            "Apabila sempurna wahyu itu diturunkan dan dipelihara dalam setiap dada dan pada mashaf-mashaf dalam masa lebih kurang dua puluh dua tahun, Allah telah kumpulkan di dalamnya penjelasan tiap-tiap perkara untuk umat ini. Dasar-dasar pembaikian dan pengislahan masyarakat yang sempurna yang didatangkan oleh al Quran itu berlegar dibawah qaidah-qaidah tertentu."
           ]
         },
         {
