@@ -342,7 +342,7 @@
 
   function getSnippet(fullText, query, length = 110) {
     if (!fullText) return '';
-    const cleanText = fullText.replace(/<!--.*?-->/g, '').replace(/^>\s*/, '').trim();
+    const cleanText = fullText.replace(/<!--.*?-->/g, '').replace(/^\[(?:KOTAK_HIJAU|HIJAU)\]\s*/g, '').replace(/^>\s*/, '').trim();
     const lower = cleanText.toLowerCase();
     const qLower = query.toLowerCase();
     const idx = lower.indexOf(qLower);
@@ -382,7 +382,8 @@
               const pClean = p.trim();
               if (!pClean || pClean.startsWith('<!-- PAGE') || (pClean.startsWith('*<!--') && pClean.endsWith('-->*'))) return;
 
-              if (pClean.toLowerCase().includes(q)) {
+              const rawForSearch = pClean.replace(/^\[(?:KOTAK_HIJAU|HIJAU)\]\s*/g, '');
+              if (rawForSearch.toLowerCase().includes(q)) {
                 matchedParagraphs++;
                 results.push({
                   type: 'bab',
@@ -391,8 +392,8 @@
                   chIdx: chIdx,
                   sIdx: sIdx,
                   pIdx: pIdx,
-                  snippet: getSnippet(pClean, query),
-                  rawText: pClean
+                  snippet: getSnippet(rawForSearch, query),
+                  rawText: rawForSearch
                 });
               }
             });
@@ -538,6 +539,10 @@
     const bq = targetEl.querySelector('blockquote');
     if (bq) {
       bq.innerHTML = highlightMatches(bq.textContent, query);
+    } else if (targetEl.classList.contains('emerald-callout-box')) {
+      targetEl.querySelectorAll('p').forEach(p => {
+        p.innerHTML = highlightMatches(p.textContent, query);
+      });
     } else if (targetEl.tagName === 'P' || targetEl.tagName === 'H4') {
       targetEl.innerHTML = highlightMatches(targetEl.textContent, query);
     }
@@ -762,6 +767,34 @@
         pageBadge.style.textAlign = 'center';
         pageBadge.innerHTML = `<span style="background: rgba(52, 211, 153, 0.15); color: var(--emerald-light); font-size: 0.76rem; font-weight: 700; padding: 3px 12px; border-radius: 9999px; border: 1px solid rgba(52, 211, 153, 0.3);">${pClean.replace(/\*|<!--|-->/g, '').trim()}</span>`;
         articleContent.appendChild(pageBadge);
+      } else if (pClean.startsWith('[KOTAK_HIJAU]') || pClean.startsWith('[HIJAU]')) {
+        const boxWrapper = document.createElement('div');
+        boxWrapper.setAttribute('data-pidx', pIdx);
+        boxWrapper.className = 'emerald-callout-box';
+
+        const rawContent = pClean.replace(/^\[(?:KOTAK_HIJAU|HIJAU)\]\s*/, '');
+        const paras = rawContent.split(/\n\s*\n/);
+
+        paras.forEach(paraText => {
+          const pText = paraText.trim();
+          if (pText) {
+            const pElem = document.createElement('p');
+            pElem.textContent = pText;
+            boxWrapper.appendChild(pElem);
+          }
+        });
+
+        const copyBoxBtn = document.createElement('button');
+        copyBoxBtn.className = 'btn-quote-copy';
+        copyBoxBtn.title = 'Salin petikan ini';
+        copyBoxBtn.innerHTML = '📋 <span>Salin</span>';
+        copyBoxBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          copyToClipboard(`${rawContent}\n\n— Antara Semalam dan Hari Ini (Imam Hasan al-Banna)`, 'Petikan berjaya disalin!');
+        });
+
+        boxWrapper.appendChild(copyBoxBtn);
+        articleContent.appendChild(boxWrapper);
       } else if (pClean.startsWith('"') || pClean.startsWith('“') || pClean.startsWith('”') || pClean.startsWith('«') || pClean.startsWith('> ')) {
         const quoteWrapper = document.createElement('div');
         quoteWrapper.setAttribute('data-pidx', pIdx);
