@@ -592,6 +592,28 @@ body {
 
 /* Responsive */
 @media (max-width: 900px) {
+  #mobileMenuToggle {
+    display: flex !important;
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    top: var(--header-height);
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    z-index: 98;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .sidebar-backdrop.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   .app-sidebar {
     position: fixed;
     left: 0;
@@ -600,6 +622,7 @@ body {
     z-index: 99;
     transform: translateX(-100%);
     box-shadow: var(--shadow-lg);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
   
   .app-sidebar.open {

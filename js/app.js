@@ -18,6 +18,7 @@
 
   // DOM Elements
   const appSidebar = document.getElementById('appSidebar');
+  const sidebarBackdrop = document.getElementById('sidebarBackdrop');
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
   const themeToggle = document.getElementById('themeToggle');
   const btnFontInc = document.getElementById('btnFontInc');
@@ -184,12 +185,33 @@
     setupEventListeners();
   }
 
+  // Mobile Sidebar Controls
+  function closeSidebarMobile() {
+    if (appSidebar) {
+      appSidebar.classList.remove('open');
+    }
+    if (sidebarBackdrop) {
+      sidebarBackdrop.classList.remove('show');
+    }
+  }
+
+  function toggleSidebarMobile() {
+    if (!appSidebar) return;
+    const isOpen = appSidebar.classList.toggle('open');
+    if (sidebarBackdrop) {
+      sidebarBackdrop.classList.toggle('show', isOpen);
+    }
+  }
+
   function setupEventListeners() {
     // Mobile Menu Toggle
     if (mobileMenuToggle) {
-      mobileMenuToggle.addEventListener('click', () => {
-        appSidebar.classList.toggle('open');
-      });
+      mobileMenuToggle.addEventListener('click', toggleSidebarMobile);
+    }
+
+    // Backdrop Click to close sidebar
+    if (sidebarBackdrop) {
+      sidebarBackdrop.addEventListener('click', closeSidebarMobile);
     }
 
     // Theme Toggle
@@ -257,6 +279,12 @@
     btnModeHikmah.classList.toggle('active', newMode === 'layer3');
     renderContent();
     renderSidebar();
+
+    // Di telefon pintar (mobile <= 900px), tutup sidebar ke tepi apabila mod ditekan
+    if (window.innerWidth <= 900) {
+      closeSidebarMobile();
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   // Render Sidebar Tree
@@ -288,7 +316,12 @@
       `;
       const sBtn = document.getElementById('sidebarDownloadBtn');
       if (sBtn) {
-        sBtn.addEventListener('click', downloadRingkasanFile);
+        sBtn.addEventListener('click', () => {
+          downloadRingkasanFile();
+          if (window.innerWidth <= 900) {
+            closeSidebarMobile();
+          }
+        });
       }
       return;
     }
@@ -342,7 +375,7 @@
           renderSidebar();
           window.scrollTo({ top: 0, behavior: 'smooth' });
           if (window.innerWidth <= 900) {
-            appSidebar.classList.remove('open');
+            closeSidebarMobile();
           }
         });
 
