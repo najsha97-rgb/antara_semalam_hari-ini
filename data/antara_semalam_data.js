@@ -480,7 +480,7 @@ window.ANTARA_SEMALAM_DATA = {
             "Jadilah orang yang beramal dan bukannya orang yang suka bercakap dan berdebat. Bila Allah memberikan hidayat kepada seseorang, maka diberinya ilham untuk beramal. Sesuatu kaum itu tidak sesat selepas mereka mendapat petunjuk kecuali orang-orang yang suka berdebat.",
             "Kasih-mengasihilah di antara kamu dan jaga serapi-rapinya ikatan kamu kerana ia merupakan rahsia kekuatan kamu dan tunjang kejayaan kamu. Tetapkanlah diri kamu sehingga Allah membuka antara kamu dan kaummu dengan kebenaran. Dialah sebaik-baik pembuka.",
             "Dengar dan patuhlah kepada pemimpin kamu di masa susah dan senang, ketika segar dan lesu. Mereka adalah simbol fikrah kamu dan penghubung di antara kamu.",
-            "Selepas itu tunggulah kemenangan dan sokongan dari Allah. Peluang tetap akan datang dan janganlah ragu.",
+            "Selepas itu tunggulah kemenangan dan sokongan dari Allah. Peluang tetap akan datang dan janganlah ragu-ragu.",
             "Firman Allah SWT:",
             "\"Pada hari itu orang-orang mukmin akan merasa gembira dengan pertolongan Allah. Allah akan menolong sesiapa yang dikehendaki-Nya. Dia Maha Berkuasa lagi Penyayang\". (ar-Rum: 4-5)"
           ]
