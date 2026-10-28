@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#071714">
+  <meta name="description" content="Aplikasi Web PWA Rasmi: Antara Semalam dan Hari Ini (بين الأمس واليوم) oleh Al-Imam Asy-Syahid Hasan al-Banna.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Antara Semalam dan Hari Ini | Imam Hasan al-Banna</title>
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./css/style.css?v=20261028_v1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header class="top-header">
+    <div class="brand-wrapper" id="brandHomeBtn">
+      <div class="brand-icon">🌿</div>
+      <div class="brand-title">
+        <span>Antara Semalam & Hari Ini</span>
+        <span class="sub">بين الأمس واليوم • IMAM HASAN AL-BANNA</span>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <button class="btn-icon" id="btnFontDec" title="Kecilkan Fon">A-</button>
+      <button class="btn-icon" id="btnFontInc" title="Besarkan Fon">A+</button>
+      <button class="btn-icon" id="themeToggle" title="Tukar Tema">🌙</button>
+      <button class="btn-icon" id="mobileMenuToggle" title="Menu" style="display: none;">☰</button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="app-container">
+    
+    <!-- Left Navigation Sidebar -->
+    <aside class="app-sidebar" id="appSidebar">
+      <!-- Search -->
+      <div class="sidebar-search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Cari bab, kata kunci atau dalil...">
+      </div>
+
+      <!-- Mode Selector Pills -->
+      <div class="mode-pill-bar">
+        <button class="mode-pill-btn active" id="btnModePenuh">📖 Versi Penuh</button>
+        <button class="mode-pill-btn" id="btnModeRingkasan">⚡ Ringkasan</button>
+        <button class="mode-pill-btn" id="btnModeHikmah">💎 Mutiara</button>
+      </div>
+
+      <!-- Chapter Tree -->
+      <div class="chapter-accordion-list" id="chapterAccordion">
+        <!-- Rendered by app.js -->
+      </div>
+    </aside>
+
+    <!-- Main Reader Panel -->
+    <main class="reader-main" id="readerMain">
+      
+      <!-- Hero Banner -->
+      <section class="chapter-hero-banner" id="readerHero">
+        <span class="hero-ch-badge" id="heroChBadge">BAB 1</span>
+        <h1 class="hero-main-title" id="heroMainTitle">Risalah Nabi yang Amanah</h1>
+        <div class="hero-arabic-title" id="heroArabicTitle">رسالة النبي الأمين</div>
+      </section>
+
+      <!-- Full Article Content -->
+      <article class="article-content" id="articleContent">
+        <!-- Rendered by app.js -->
+      </article>
+
+      <!-- Ringkasan Section -->
+      <section id="ringkasanSection" style="display: none;">
+        <!-- Rendered by app.js -->
+      </section>
+
+      <!-- Hikmah Quotes Section -->
+      <section id="hikmahSection" style="display: none;">
+        <!-- Rendered by app.js -->
+      </section>
+
+      <!-- Bottom Nav Buttons -->
+      <div class="bottom-nav-bar" id="bottomNav">
+        <button class="nav-pill-btn" id="btnPrevSub" disabled>← Bab Sebelum</button>
+        <button class="nav-pill-btn" id="btnNextSub">Bab Seterusnya →</button>
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- PWA Data Script -->
+  <script src="./data/antara_semalam_data.js?v=20261028_v1"></script>
+  <!-- Main Application Script -->
+  <script src="./js/app.js?v=20261028_v1"></script>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then(reg => {
+          console.log('ServiceWorker registered with scope:', reg.scope);
+        }).catch(err => {
+          console.log('ServiceWorker registration failed:', err);
+        });
+      });
+    }
+
+    // Toggle menu for mobile screen
+    function checkWidth() {
+      const toggle = document.getElementById('mobileMenuToggle');
+      if (window.innerWidth <= 900) {
+        toggle.style.display = 'inline-flex';
+      } else {
+        toggle.style.display = 'none';
+        document.getElementById('appSidebar').classList.remove('open');
+      }
+    }
+    window.addEventListener('resize', checkWidth);
+    checkWidth();
+  </script>
+
+</body>
+</html>
+
