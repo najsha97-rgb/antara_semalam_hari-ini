@@ -324,73 +324,46 @@ window.ANTARA_SEMALAM_DATA = {
       "title_ar": "دعوتنا دعوة بعث وإنقاذ",
       "subtopics": [
         {
-          "id": "c9_s1",
-          "title": "(a) Peninggalan yang berat.",
-          "menu_title": "Peninggalan Yang Berat.",
+          "id": "c9_s0",
+          "title": "Tanggungjawab Kebangkitan & Dakwah",
+          "menu_title": "Tanggungjawab Dakwah",
           "paragraphs": [
-            "Wahai saudara-saudara seIslamku, Allah menghendaki kita mewarisi peninggalan yang berat dengan bebanan tanggungjawab yang besar. Allah mahu sinar dakwah kamu ini menyinari segenap kegelapan. Allah telah memberi peluang kepada anda meninggikan kalimat-Nya dan syariatnya dengan mendirikan semula negara Islam yang baru. Firman Allah yang bermaksud; \"Sesungguhnya Allah pasti menolong orang menolong (agamanya), sesungguhnya Allah benar-benar maha kuat lagi maha perkasa\" (al-Hajj:40)."
+            "Wahai saudara-saudara seIslamku, Allah menghendaki kita mewarisi peninggalan yang berat dengan bebanan tanggungjawab yang besar. Allah mahu sinar dakwah kamu ini menyinari segenap kegelapan. Allah telah memberi peluang kepada anda meninggikan kalimat-Nya dan syariat-Nya dengan mendirikan semula negara Islam yang baru.",
+            "Firman Allah yang bermaksud:",
+            "\"Sesungguhnya Allah pasti menolong orang menolong (agamanya), sesungguhnya Allah benar-benar Maha Kuat lagi Maha Perkasa\". (al-Hajj:40)"
+          ]
+        },
+        {
+          "id": "c9_s1",
+          "title": "Dua Matlamat Asasi Dakwah",
+          "menu_title": "Dua Matlamat Asasi",
+          "paragraphs": [
+            "Apakah yang kita mahu wahai saudara-saudaraku..?",
+            "Adakah kita mahu mengumpulkan harta, sedang ia hanyalah bayangan yang akan lenyap. Atau adakah kita mahu kemasyhuran, sedangkan ianya akan hilang. Atau adakah kita mahu menjadi samseng di muka bumi ini..?",
+            "Firman Allah yang bermaksud:",
+            "\"Sesungguhnya bumi (ini) kepunyaan Allah, diwariskan kepada siapa yang dikehendaki-Nya dari hamba-hamba-Nya\". (al-A'raf:128)",
+            "Dan kita juga membaca firman Allah yang bermaksud:",
+            "\"Negeri akhirat itu Kami jadikan untuk orang-orang yang tidak ingin menyombongkan diri dan berbuat kerosakan di (muka) bumi dan kesudahan (yang baik) itu adalah bagi orang-orang yang bertakwa\". (al-Qasas:83)",
+            "Allah menjadi saksi bahawa kita tidak mahu itu semua dan kita tidak mengajak manusia kepadanya, tetapi ingatlah saudara sekelian, bahawa anda semua mempunyai dua matlamat asasi:",
+            "(a) Membebaskan tanah air Islam dari sebarang kuasa asing. Ini adalah hak semula jadi setiap insan dan tidak boleh ditolak kecuali orang zalim atau bersifat kuku besi.",
+            "(b) Menegakkan sebuah negara Islam yang bebas mengamalkan undang-undang Islam, melaksanakan sistem Islam dalam masyarakat, mengiklankan prinsip-prinsipnya dan menyampaikan dakwahnya kepada manusia. Selagi ia tidak tertegak, seluruh umat Islam adalah berdosa dan bertanggungjawab di hadapan Allah 'Azza wa Jalla atas kecuaian dan kelemahan mereka.",
+            "Menjadi suatu kezaliman kepada seluruh manusia dalam keadaan sekarang ini bila tertegaknya negara-negara yang berdiri atas prinsip-prinsip zalim dan melaungkan slogan-slogan jahat tetapi tidak ada dalam kalangan manusia ini orang yang berusaha untuk menegakkan sebuah negara yang hak, adil dan sejahtera.",
+            "Kita mahu melaksanakan dua matlamat ini di Lembah Nil, negeri-negeri Arab dan di setiap bumi yang beraqidah Islam iaitu kerana agama, nasionaliti dan aqidah Islam itu telah menyatukan seluruh mereka."
           ]
         },
         {
           "id": "c9_s2",
-          "title": "(b) Matlamat am kita.",
-          "menu_title": "Matlamat Am Kita.",
+          "title": "Matlamat Khas Memperbaiki Masyarakat",
+          "menu_title": "Matlamat Khas Masyarakat",
           "paragraphs": [
-            "Apakah yang kita mahu wahai saudara-saudaraku..? Adakah kita mahu mengumpulkan harta, sedang ia hanyalah bayangan yang akan lenyap. Atau adakah kita mahu kemasyhuran, sedangkan ianya akan hilang. Atau adakah kita mahu menjadi samseng di muka bumi ini..? Firman Allah yang bermaksud; \"Sesungguhnya bumi (ini) kepunyaan Allah, dipesakakannya kepada siapa yang dikehendaki-Nya dari hamba-hamba-Nya (al A'raf:128). Dan kita juga membaca firman Allah yang bermaksud; \"Negeri akhirat itu Kami jadikan untuk orang-orang yang tidak ingin menyombongkan diri dan berbuat kerosakan di (muka) bumi dan kesudahan (yang baik) itu adalah bagi orang-orang yang bertakwa\" ( al Qasas:83). Allah menjadi saksi bahawa kita tidak mahu itu semua dan kita tidak mengajak manusia kepadanya, tetapi ingatlah saudara sekalian, bahawa anda semua mempunyai dua matlamat asasi; 11",
-            "*<!-- PAGE 12 -->*",
-            "a) Membebaskan tanahair Islam dari sebarang kuasa asing. Ini adalah hak semula jadi setiap insan dan tidak boleh ditolak kecuali orang zalim atau bersifat kuku besi. b) Menegakkan sebuah negara Islam yang bebas mengamalkan undang-undang Islam, melaksanakan sistem Islam dalam masyarakat, mengiklankan prinsip-prinsipnya dan menyampaikan dakwahnya kepada manusia. Selagi ia tidak tertegak, seluruh umat Islam adalah berdosa dan bertanggungjawab di hadapan Allah 'azza wa jalla atas kecuaian dan kelemahan mereka. Menjadi suatu kezaliman kepada seluruh manusia dalam keadaan sekarang ini bila tertegaknya negara-negara yang berdiri atas prinsip-prinsip zalim dan melaungkan slogan-slogan jahat tetapi tidak ada di kalangan manusia ini orang yang berusaha untuk menegakkan sebuah negara yang hak, adil dan sejahtera. Kita mahu melaksanakan 2 matlamat ini di Lembah Nil, Negeri-negeri Arab dan di setiap bumi yang beraqidah Islam iaitu kerana agama, nasionaliti dan aqidah telah menyatukan seluruh mereka."
-          ]
-        },
-        {
-          "id": "c9_s3",
-          "title": "(c) Matlamat Khas Kita.",
-          "menu_title": "Matlamat Khas Kita.",
-          "paragraphs": [
-            "Selepas dua matlamat tadi, kita mempunyai beberapa matlamat khas pula dimana masyarakat tidak akan menjadi sempurna Islam tanpanya. Ingatlah wahai saudaraku, Lebih 60% dari rakyat Mesir hidup lebih rendah dari binatang. Mereka berhempas pulas untuk mendapat sesuap makanan. Negeri Mesir diancam kebuluran dan terdedah kepada pelbagai masalah ekonomi yang tidak diketahui bagaimana untuk mengatasinya kecuali Allah. Di Mesir terdapat lebih dari 320 syarikat asing yang memonopoli sektor awam di seluruh negara. Jentera- jentera perniagaan, perkilangan dan sektor-sektor ekonomi semuanya di tangan asing yang mengenakan riba. Segala kekayaan harta benda secepat kilat berpindah ke tangan mereka dari tangan peribumi. Mesir merupakan negara yang paling teruk menderita pelbagai penyakit dan kecacatan. Lebih dari 90% rakyat Mesir diancam oleh penyakit tubuh badan dan kecacatan pancaindera. Sampai sekarang lebih dari 80 % penduduk Mesir masih lagi mengalami buta huruf. Lebih dari 100 000 orang yang berpelajaran pula hanya sekadar sekolah rendah. Jenayah berganda sehingga yang keluar dari penjara lebih ramai dari sekolah. Di samping itu hingga kini, Mesir tidak mampu untuk menyediakan pasukan tentera yang lengkap sempurna. Keadaan yang sama berlaku di seluruh dunia Islam. Menjadi matlamat anda sekalian untuk berusaha memperbaiki mutu pelajaran, memerangi kemiskinan, kejahilan, penyakit, jenayah dan membentuk masyarakat yang contoh yang layak dipanggil Islam."
-          ]
-        },
-        {
-          "id": "c9_s4",
-          "title": "(d) Wasilah Am Kita.",
-          "menu_title": "Wasilah Am Kita.",
-          "paragraphs": [
-            "Bagaimana kita boleh sampai ke matlamat-matlamat ini...? Syarahan-syarahan, ceramah-ceramah, surat, kursus dan mengkaji sebab kelemahan, kesemua ini adalah tidak mencukupi dan tidak banyak memberi faedah untuk sampai kepada matlamat yang disebut tadi. Dalam setiap dakwah ada cara yang perlu diambil dan dilaksanakan. Cara-cara am untuk berdakwah tidak lebih dan tidak kurang dari 3 perkara;"
-          ]
-        },
-        {
-          "id": "c9_s7",
-          "title": "3. Kerja terus menerus.",
-          "menu_title": "Kerja Terus Menerus.",
-          "paragraphs": [
-            "Inilah wasilah kita secara umumnya wahai saudaraku. Percayalah dengan fikrahmu, berkumpullah dan berusahalah dengan teguh."
-          ]
-        },
-        {
-          "id": "c9_s8",
-          "title": "(f) Wasilah Tambahan.",
-          "menu_title": "Wasilah Tambahan.",
-          "paragraphs": [
-            "Selain cara-cara am tadi, terdapat cara sampingan yang kadngkala perlu diambil dan diikuti. Ada yang positif dan ada yang negatif. Ada yang selaras dengan uruf setempat dan ada yang menyalahi dan bertentangan. Ada yang lembut dan ada yang keras. Kita perlu melatih diri kita mengikuti kesemua bentuk tersebut dan bersedia demi menjamin kejayaan Islam. Kadangkala 12",
-            "*<!-- PAGE 13 -->*",
-            "kita dituntut supaya menyanggahi adat dan kebiasaan. Kadangkala kita diminta keluar dari cara kebiasaan orang ramai. Sebenarnya tidak dikatakan hakikat dakwah melainkan terpaksa keluar dari kebiasaan orang ramai manusia dan bangun merubah segala adat kebiasaan. Apakah anda sekalian bersedia untuk itu wahai saudaraku?"
-          ]
-        },
-        {
-          "id": "c9_s9",
-          "title": "(g) Keraguan.",
-          "menu_title": "Keraguan.",
-          "paragraphs": [
-            "Ramai orang akan berkata; apa guna wasilah-wasilah ini.? Adakah ia akan mampu membangun dan menyusun masyarakat yang telah tenggelam dalam masalah dan gejala yang begitu parah ini.? Bagaimana kamu hendak memperbaiki ekonomi tanpa menggunakan riba..? Bagaimana kamu hendak lakukan dengan wanita.? Bagaimana kamu mampu merampas semula hak kamu tanpa menggunakan kekuatan.? Ketahuilah wahai saudaraku.. Segala was-was syaitan yang dicampakkan ke dalam cita-cita setiap muslih itu (reformis) akan dihilangkan oleh Allah. Dia amat mengetahui dan bijaksana. Peringatkan kepada mereka, sejarah pernah menceritakan kepada kita kisah umat-umat yang telah lalu dan kini. Ianya mengandungi pelbagai pengajaran dan penyedaran. Umat yang berjuang untuk hidup tidak mungkin akan mati."
-          ]
-        },
-        {
-          "id": "c9_s10",
-          "title": "(h) Halangan-halangan di jalan kita.",
-          "menu_title": "Halangan-Halangan Di Jalan Kita.",
-          "paragraphs": [
-            "Suka saya berterus terang kepada anda semua.. sesungguhnya dakwah anda ini masih belum dikenali oleh ramai. Pada hari mereka mengenali dan mengetahui matlamat dan objektifnya, ia akan menerima tentangan yang hebat. Anda akan dapati di hadapan kamu berbagai kesusahan dan halangan yang akan menghalang anda. Pada masa itu barulah sebenarnya anda mula mengikut jejak ahli-ahli dakwah. Sekarang mereka masih belum mengetahui lagi. Anda masih di peringkat awal dakwah dan anda perlu bersedia dengan keperluan perjuangan dan jihad. Kejahilan rakyat tentang hakikat Islam akan menjadi penghalang jalan dakwah anda. Anda akan dapati sesetengah ahli-ahli agama dan ulama-ulama rasmi merasa pelik dengan fikrah anda. Mereka akan menentang jihad anda. Para pemimpin, ketua, orang-orang kenamaan dan mempunyai kuasa akan membenci anda. Semua pemerintah akan bekerjasama menghalang anda, cuba menyekat aktiviti-aktiviti anda dan meletak halangan di tengah jalan dakwah anda. Lanun-lanun itu juga akan berganding bahu untuk menentang dan memadam sinar dakwah anda. Mereka akan meminta bantuan pemerintah-pemerintah yang lemah dan orang yang berakhlak buruk untuk tujuan yang sama. Anda akan dimusuhi dan di benci. Anda akan difitnah dan ditohmah. Mereka akan berusaha menampilkan segala kekurangan terhadap dakwah anda. Dengan kekuatan dan kekuasaan yang ada pada mereka, mereka cuba menampakkan anda kepada orang ramai dengan gambaran yang paling hodoh. Mereka akan menindas dengan harta dan kuasa mereka. Firman Allah yang bermaksud; \"Mereka itu mahu memadamkan agama Allah dengan mulut mereka dan Allah penyempurna agama-Nya sekalipun di benci oleh orang-orang kafir\" (as Saff:8). Ketika itu anda akan memasuki era cubaan dan ujian (mehnah). Anda akan dipenjara, ditangkap, dipencilkan dan di rampas segala harta benda kamu. Segala kerja anda akan disekat dan rumah anda akan digelidah. Mungkin masa ujian ini akan menjadi begitu panjang. Firman Allah yang bermaksud; \"Apakah manusia itu mengira mereka akan ditinggalkan begitu saja untuk berkata kami telah beriman sedangkan mereka tidak diuji\" (al Ankabut:2). Tetapi Allah telah berjanji kepada anda selepas kesemuanya ini iaitu kemenangan orang-orang mujahidin dan pahala orang yang berusaha baik. Firman Allah yang bermaksud; \"Hai orang-orang yang beriman, sukakah kamu ditunjukkan satu perniagaan yang dapat menyelamatkan kamu dari azab yang pedih\" (as Saff:10). Maka apakah anda akan tetap menjadi penyokong-penyokong Allah? 13",
-            "*<!-- PAGE 14 -->*",
-            "(I) Faktor-Faktor Kejayaan. Suatu kemestian yang perlu disebut di sini wahai saudaraku, Di dalam segala rintangan ini, kita perlu ingat bahawa kita berdakwah kepada Allah. Ianya adalah dakwah yang paling tinggi. Kita mengajak dengan fikrah Islam, suatu fikrah yang paling kuat. Kita kemukakan kepada manusia Syariat al-Quran iaitu syariat yang paling adil. Firman Allah yang bermaksud; \"Celupan Allah dan siapakah yang lebih baik celupannya daripada Allah\" (al Baqarah:138) Seluruh alam memerlukan dakwah ini. Setiap yang ada di dalamnya bersedia memberikan jalannya. Kita sesungguhnya bersyukur kepada Allah kerana kita terlepas dari ketamakan untuk diri sendiri dan jauh dari kepentingan diri. Kita tidak bermaksud selain dari Allah dan kebajikan manusia. Kita tidak bekerja melainkan kerana mencari keredhaan-Nya. Kita sesungguhnya sentiasa menunggu sokongan dan pertolongan dari Allah. Sesiapa yang ditolongkan oleh Allah maka dia tidak akan kalah. Firman Allah yang bermaksud; \"Yang demikian itu kerana sesungguhnya Allah adalah pelindung orang-orang beriman dan kerana sesungguhnya orang-orang kafir itu tiada mempunyai pelindung\" (Muhammad:11). Kekuatan dakwah kita, keperluan dunia kepadanya, kemurnian tujuan kita dan sokongan Allah kepada kita adalah faktor-faktor kejayaan kita yang tidak dapat digugat oleh sebarang galangan dan tidak dapat dihalang oleh sebarang halangan. Firman Allah yang bermaksud; \"Dan Allah berkuasa terhadap urusannya tetapi kebanyakan manusia tidak mengetahui\" (Yusuf:21)."
+            "Selepas dua matlamat tadi, kita mempunyai beberapa matlamat khas pula kerana masyarakat tidak akan menjadi sempurna Islam tanpa matlamat tersebut.",
+            "Ingatlah wahai saudaraku,",
+            "Lebih 60% dari rakyat Mesir hidup lebih rendah dari binatang. Mereka berhempas pulas untuk mendapat sesuap makanan. Negeri Mesir diancam kebuluran dan terdedah kepada pelbagai masalah ekonomi yang tidak diketahui bagaimana untuk mengatasinya kecuali Allah.",
+            "Di Mesir terdapat lebih dari 320 syarikat asing yang memonopoli sektor awam di seluruh negara. Jentera-jentera perniagaan, perkilangan dan sektor-sektor ekonomi semuanya di tangan asing yang mengenakan riba. Segala kekayaan harta benda secepat kilat berpindah ke tangan mereka dari tangan peribumi.",
+            "Mesir merupakan negara yang paling teruk menderita pelbagai penyakit dan kecacatan. Lebih dari 90% rakyat Mesir diancam oleh penyakit tubuh badan dan kecacatan pancaindera.",
+            "Sampai sekarang lebih dari 80% penduduk Mesir masih lagi mengalami buta huruf. Lebih dari 100,000 orang yang berpelajaran pula hanya sekadar sekolah rendah. Jenayah berganda sehingga yang keluar dari penjara lebih ramai dari sekolah.",
+            "Di samping itu hingga kini, Mesir tidak mampu untuk menyediakan pasukan tentera yang lengkap sempurna.",
+            "Keadaan yang sama berlaku di seluruh dunia Islam. Menjadi matlamat anda sekalian untuk berusaha memperbaiki mutu pelajaran, memerangi kemiskinan, kejahilan, penyakit, jenayah dan membentuk masyarakat contoh yang layak dipanggil Islam."
           ]
         }
       ]
