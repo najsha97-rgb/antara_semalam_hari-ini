@@ -37,7 +37,7 @@ window.ANTARA_SEMALAM_DATA = {
       "subtopics": [
         {
           "id": "c2_s0",
-          "title": "Teks Utama: Manhaj Al-Quran dalam Memperbaiki Masyarakat",
+          "title": "Manhaj Al-Quran dalam Memperbaiki Masyarakat",
           "menu_title": "Manhaj Al-Quran dalam Memperbaiki Masyarakat",
           "paragraphs": [
             "Al-Quran adalah penghimpun segala cara dan kaedah untuk membaiki masyarakat secara menyeluruh. Ia telah diturunkan ke atas Nabi SAW secara beransur-ansur kemudian dibacakan kepada orang-orang mukmin dari masa ke semasa menurut keadaan, suasana dan sempena.",
@@ -47,36 +47,21 @@ window.ANTARA_SEMALAM_DATA = {
           ]
         },
         {
-          "id": "c2_s4",
-          "title": "4) Pengisytiharan persaudaran di kalangan manusia.",
-          "menu_title": "4) Pengisytiharan persaudaran di kalan...",
+          "id": "c2_s1",
+          "title": "Kaedah-kaedah Perubahan Masyarakat (Yang Menyeluruh)",
+          "menu_title": "Kaedah-kaedah Perubahan Masyarakat",
           "paragraphs": [
-            "5) Membangunkan seluruh laki-laki dan wanita serta pengisytiharan tanggungjawab dan persamaan di antara keduanya serta penentuan tugas masing- masing secara detail. 6) Jaminan untuk masyarakat dengan penetapkan hak-hak kehidupan, pemilikan, kerja, kesihatan, kebebasan, pelajaran, keselamatan individu dan penentuan sumber laba."
-          ]
-        },
-        {
-          "id": "c2_s5",
-          "title": "7) Memelihara dua kehendak semulajadi; keinginan memelihara jiwa dan memelihara",
-          "menu_title": "7) Memelihara dua kehendak semulajadi;...",
-          "paragraphs": [
-            "keturunan dengan mengatur keinginan perut dan seks."
-          ]
-        },
-        {
-          "id": "c2_s6",
-          "title": "8) Keras dan kesungguhan dalam memerangi jenayah-jenayah berat.",
-          "menu_title": "8) Keras dan kesungguhan dalam memeran...",
-          "paragraphs": [
-            "2",
-            "*<!-- PAGE 3 -->*"
-          ]
-        },
-        {
-          "id": "c2_s7",
-          "title": "9) Menguatkan kesatuan umat ini menghapuskan seluruh unsur-unsur dan sebab yang",
-          "menu_title": "9) Menguatkan kesatuan umat ini mengha...",
-          "paragraphs": [
-            "membawa perpecahan umat. 10) Mewajibkan umat supaya berjihad dalam menegakkan prinsip-prinsip kebenaran yang didatangkan oleh sistem ini. 11) Menjadikan negara sebagai wakil kepada fikrah Islam dan negara bertanggungjawab melindunginya. Negara juga bertanggungjawab untuk melaksanakan matlamatnya dalam masyarakat yang khusus(Negara Islam) dan menyampaikan fikrah ini kepada seluruh manusia."
+            "1) Ketuhanan (Rabbaniah).",
+            "2) Ketinggian jiwa manusia.",
+            "3) Peneguhan aqidah terhadap adanya pembalasan.",
+            "4) Pengisytiharan persaudaran di kalangan manusia.",
+            "5) Membangunkan seluruh laki-laki dan wanita serta pengisytiharan tanggungjawab dan persamaan di antara keduanya serta penentuan tugas masing-masing secara detail.",
+            "6) Jaminan untuk masyarakat dengan penetapkan hak-hak kehidupan, pemilikan, kerja, kesihatan, kebebasan, pelajaran, keselamatan individu dan penentuan sumber laba.",
+            "7) Memelihara dua kehendak semulajadi; keinginan memelihara jiwa dan memelihara keturunan dengan mengatur keinginan perut dan seks.",
+            "8) Keras dan kesungguhan dalam memerangi jenayah-jenayah berat.",
+            "9) Menguatkan kesatuan umat ini menghapuskan seluruh unsur-unsur dan sebab yang membawa perpecahan umat.",
+            "10) Mewajibkan umat supaya berjihad dalam menegakkan prinsip-prinsip kebenaran yang didatangkan oleh sistem ini.",
+            "11) Menjadikan negara sebagai wakil kepada fikrah Islam dan negara bertanggungjawab melindunginya. Negara juga bertanggungjawab untuk melaksanakan matlamatnya dalam masyarakat yang khusus (Negara Islam) dan menyampaikan fikrah ini kepada seluruh manusia."
           ]
         }
       ]
