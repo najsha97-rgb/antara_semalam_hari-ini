@@ -365,6 +365,21 @@ window.ANTARA_SEMALAM_DATA = {
             "Di samping itu hingga kini, Mesir tidak mampu untuk menyediakan pasukan tentera yang lengkap sempurna.",
             "Keadaan yang sama berlaku di seluruh dunia Islam. Menjadi matlamat anda sekalian untuk berusaha memperbaiki mutu pelajaran, memerangi kemiskinan, kejahilan, penyakit, jenayah dan membentuk masyarakat contoh yang layak dipanggil Islam."
           ]
+        },
+        {
+          "id": "c9_s3",
+          "title": "Wasilah-wasilah Mencapai Matlamat",
+          "menu_title": "Wasilah Dakwah",
+          "paragraphs": [
+            "Bagaimana kita boleh sampai ke matlamat-matlamat ini?",
+            "Syarahan-syarahan, ceramah-ceramah, surat, kursus dan mengkaji sebab kelemahan, kesemua ini adalah tidak mencukupi dan tidak banyak memberi faedah untuk sampai kepada matlamat yang disebut tadi. Dalam setiap dakwah ada cara yang perlu diambil dan dilaksanakan.",
+            "Cara-cara am untuk berdakwah tidak lebih dan tidak kurang dari 3 perkara:",
+            "1. Iman yang mendalam.",
+            "2. Pembentukan yang rapi.",
+            "3. Kerja terus menerus.",
+            "Inilah wasilah kita secara umumnya wahai saudaraku.",
+            "Percayalah dengan fikrahmu, berkumpullah dan berusahalah dengan teguh."
+          ]
         }
       ]
     },
