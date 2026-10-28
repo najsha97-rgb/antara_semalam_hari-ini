@@ -97,7 +97,8 @@ window.ANTARA_SEMALAM_DATA = {
             "9. Menambah ilmu pengetahuan setiap muslim dan muslimat dalam berbagai bidang hidup yang sesuai untuk mereka.",
             "10. Baik pergaulan dan berakhlak dengan akhlak yang baik.",
             "11. Sentiasa menjaga keselamatan tubuh dan memelihara pancaindera.",
-            "12. Ikatan yang baik di antara pemerintah dengan rakyat dengan menjaga dan taat."
+            "12. Ikatan yang baik di antara pemerintah dengan rakyat dengan menjaga dan taat.",
+            "Setiap Muslim dituntut mempraktikkan kewajipan ini dan memperjuangkannya sebagaimana ia telah diterangkan oleh sistem al-Quran. Setiap Muslim jangan sekali-kali mencuaikannya walau satu pun daripadanya. Kesemua kewajipan ini telah disebutkan dalam al-Quran. Segala amalan Nabi SAW dan para sahabat RA menerangkan pelaksanaan ini dengan jelas dan terang. Tiap-tiap amalan tersebut mengukuh dan tertumpu kepada prinsip-prinsip sistem Islam yang memberi faedah kepada seluruh manusia."
           ]
         }
       ]
