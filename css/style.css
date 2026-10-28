@@ -378,7 +378,47 @@ body {
   font-size: 0.8rem;
   padding: 3px 12px;
   border-radius: var(--radius-pill);
+}
+
+.hero-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 0.75rem;
+  gap: 12px;
+}
+
+.btn-copy-section {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(5, 150, 105, 0.15);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  color: var(--emerald-light);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.btn-copy-section:hover {
+  background: rgba(5, 150, 105, 0.3);
+  border-color: var(--gold-primary);
+  color: var(--gold-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+}
+
+.btn-copy-section:active {
+  transform: translateY(1px);
+}
+
+.btn-copy-section .copy-icon {
+  font-size: 0.95rem;
 }
 
 .hero-main-title {
@@ -601,4 +641,123 @@ body {
   flex: 1;
   font-size: 1.02rem;
   color: var(--text-primary);
+}
+
+/* ==========================================================================
+   UTILITI SALIN TEKS (COPY UTILITIES) & TOAST NOTIFICATION
+   ========================================================================== */
+.article-content,
+.article-content p,
+.article-content blockquote,
+.ringkasan-list,
+.ringkasan-text,
+.hikmah-quote-text,
+.reader-main {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}
+
+.quote-wrapper {
+  position: relative;
+  margin: 1.75rem 0;
+}
+
+.quote-wrapper blockquote {
+  margin: 0 !important;
+  padding-right: 3.5rem;
+}
+
+.btn-quote-copy {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: rgba(12, 35, 31, 0.7);
+  border: 1px solid rgba(245, 197, 66, 0.35);
+  color: var(--gold-light);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+.btn-quote-copy:hover {
+  background: var(--gold-primary);
+  color: #071714;
+  border-color: var(--gold-primary);
+  box-shadow: 0 2px 8px rgba(245, 197, 66, 0.4);
+}
+
+.btn-item-copy {
+  background: rgba(5, 150, 105, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  color: var(--emerald-light);
+  font-size: 0.85rem;
+  padding: 5px 9px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.btn-item-copy:hover {
+  background: var(--gold-primary);
+  color: #071714;
+  border-color: var(--gold-primary);
+}
+
+.btn-quote-copy-bottom {
+  margin-top: 0.8rem;
+  background: rgba(5, 150, 105, 0.15);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  color: var(--emerald-light);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+}
+
+.btn-quote-copy-bottom:hover {
+  background: var(--gold-primary);
+  color: #071714;
+  border-color: var(--gold-primary);
+}
+
+/* Toast Notification Floating */
+.app-toast {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: rgba(12, 35, 31, 0.95);
+  border: 1px solid var(--gold-primary);
+  color: var(--text-primary);
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  font-size: 0.92rem;
+  font-weight: 600;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(245, 197, 66, 0.2);
+  z-index: 99999;
+  pointer-events: none;
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+}
+
+.app-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
 }

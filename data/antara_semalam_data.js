@@ -496,32 +496,32 @@ window.ANTARA_SEMALAM_DATA = {
           "menu_title": "27 Prinsip Ringkasan",
           "paragraphs": [
             "1. Risalah Nabi SAW — pemisah antara alam gelap dan cahaya, serta pengisytiharan bagi satu sistem baharu yang menyeluruh untuk umat manusia.",
-            "2. Al-Quran menjelaskan segala usul pemulihan sosial berasaskan 11 prinsip: (Rabbaniah / ketinggian martabat manusia / akidah pembalasan / ukhuwah kemanusiaan / kesaksamaan lelaki dan wanita / jaminan sosial / mengekang nafsu / ketegasan undang-undang / penyatuan ummah / kewajipan jihad menegakkan kebenaran / kepentingan kewujudan negara Islam).",
-            "3. Perlunya amalan di samping teori. Kewajipan syiar Islam melahirkan hasil pemulihan manusia yang praktikal: (Solat & munajat / puasa & iffah / zakat & infaq / haji & tadabbur / usaha & kerja / jihad / amar makruf nahi mungkar / menuntut ilmu / muamalah berakhlak / memelihara kesihatan jasad / solidariti rakyat dan pemerintah).",
-            "4. Tegaknya Negara Islam pertama atas asas yang syumul ini. Lahir kesatuan sosial, politik dan peradaban. Ia berjaya membasmi keberhalaan, syirik, dan kekeliruan ahli kitab dari bumi Arab, lalu terus mara ke timur dan barat sehingga menguasai lautan dunia.",
-            "5. Umat Islam menerima segala tamadun dunia terdahulu dengan tapisan neraca nilai Islam.",
-            "6. Faktor-faktor kelemahan mula menyusup ke dalam tubuh umat: (Perselisihan politik & perebutan kuasa / agama bertukar menjadi perdebatan teologi yang kaku / tenggelam dalam kemewahan duniawi / peralihan kuasa kepada bangsa asing / kelalaian terhadap ilmu sains & teknologi / ghurur dengan kekuatan sendiri / terpedaya menjadi pak turut kuasa asing).",
-            "7. Fasa Pertarungan Politik (I): Serangan ganas bangsa Tatar / Mongol yang meruntuhkan Khilafah Abbasiyyah di Baghdad, manakala tentera Salib mengambil peluang menyerang negeri-negeri Islam.",
-            "8. Kebangkitan semula ketenteraan Islam: Panglima Salahuddin al-Ayyubi dan Zahir Baybars berjaya menangkis serangan musuh, dan Khilafah Uthmaniyyah bangkit menawan kota Konstantinopel (Istanbul).",
-            "9. Eropah bangkit memanfaatkan ilmu daripada tamadun Islam: Mereka menawan semula Sepanyol (Andalusia), meneroka jalan laut baharu, dan mencipta teknologi sains moden secara pesat.",
-            "10. Fasa Pertarungan Politik (II): Gelombang penjajahan baharu Barat menjajah negeri-negeri Islam dan meruntuhkan Khilafah Uthmaniyyah selepas Perang Dunia Pertama, lalu membahagikan wilayah Islam sesama mereka.",
-            "11. Kebangkitan semula umat Islam menentang penjajahan: Gerakan kebangkitan mula bangun menuntut kebebasan, kedaulatan, dan kemerdekaan tanah air.",
-            "12. Fasa Pertarungan Sosial (I): Tamadun Islam membuka mata Eropah, namun ditentang keras oleh pihak gereja; akhirnya gereja tewas dan kuasa agama disingkirkan daripada urusan negara dan masyarakat.",
-            "13. Kemajuan kebendaan Eropah tanpa roh agama: Lahir pelbagai kerosakan akibat fahaman materialisme (menolak Tuhan / kebebasan mutlak tanpa batas moral / individualisme melampau / riba dan penindasan). Tamadun Barat gagal memberikan kebahagiaan hakiki kepada jiwa manusia.",
-            "14. Cengkaman kebendaan (materialisme) Barat menular ke dalam Dunia Islam: Kuasa penjajah mengeksport budaya hedonisme dan menyekat segala unsur kekuatan umat.",
-            "15. Kuasa Eropah menguasai ekonomi umat, memaksakan cara hidup liberal, dan mendirikan sekolah-sekolah asing untuk melancarkan serangan pemikiran (ghazwul fikr).",
-            "16. Sebahagian umat Islam mula silau dan kagum dengan Barat, lalu membuang syariat Islam (seperti gerakan sekularisasi di Turki), manakala ajaran Islam digambarkan secara keliru dan terpesong.",
-            "17. Eropah berjaya memenangi perang sosial dan budaya ke atas Dunia Islam selepas memenangi perang politik dan ketenteraan.",
-            "18. Dakwah Kita Adalah Penyelamat: Memikul bebanan yang berat tanpa mengharapkan pangkat atau harta duniawi; matlamat kita hanyalah membebaskan tanah air Islam dan mendirikan Daulah Islamiyah yang adil.",
-            "19. Membina semula kualiti keilmuan masyarakat, memartabatkan taraf hidup, serta membasmi kejahilan, kemiskinan, dan penyakit sosial.",
-            "20. Tiga Tonggak Gerakan Kita: (1) Iman yang mendalam, (2) Pembentukan kader yang rapi, dan (3) Amal kerja yang berterusan. Wasilah kita adalah segala jalan yang syar'i dan berani mendepani masyarakat untuk melakukan islah.",
-            "21. Bersedia menghadapi sikap golongan yang memandang remeh kerja dakwah dan menganggapnya mustahil untuk merubah keadaan.",
-            "22. Menyedari hakikat rintangan perjuangan: Dakwah ini pasti akan ditentang oleh pihak yang berkepentingan apabila mereka menyedari hakikatnya; fitnah, tohmahan, penjara, dan ujian pengusiran adalah sunnatullah perjuangan.",
-            "23. Keyakinan penuh terhadap kemenangan: Kemenangan pasti berpihak kepada kita berasaskan kesucian dakwah, keperluan mendesak umat manusia, keikhlasan niat, dan janji pertolongan Allah SWT.",
-            "24. Kewajipan segera menyahut seruan kebangkitan, memantapkan kefahaman fikrah, serta memperkukuh kesatuan saf pendakwah.",
-            "25. Hakikat Gerakan Kita: Kita bukan parti politik konvensional, bukan pertubuhan kebajikan terhad, dan bukan persatuan sempit. Kita adalah roh baharu yang mengalir di hati umat ini.",
-            "26. Sifat Syumul Dakwah: Dakwah kita merangkumi seluruh aspek Islam, dan urusan pentadbiran / pemerintahan adalah sebahagian daripada ajarannya.",
-            "27. Prinsip Keamanan & Ketegasan: Kita bukan golongan pemusnah, tetapi kita tidak akan sesekali berkompromi dan akan bangkit menentang sesiapa sahaja yang menghalang kebenaran syariat Allah."
+            "2. Al-Quran menjelaskan segala usul pemulihan masyarakat berasaskan 11 kaedah: (Rabbaniah / ketinggian jiwa manusia / akidah pembalasan akhirat / persaudaraan kemanusiaan / persamaan tanggungjawab lelaki dan wanita / jaminan sosial masyarakat / mengatur keinginan perut dan seks / ketegasan memerangi jenayah / menguatkan kesatuan ummah / kewajipan jihad menegakkan kebenaran / negara sebagai wakil fikrah Islam).",
+            "3. Perlunya amalan di samping teori: Kewajipan syiar Islam melahirkan hasil pemulihan yang praktikal: (Solat & munajat / puasa & menjaga diri / zakat & infaq / haji & tadabbur kerajaan Allah / usaha & kerja / jihad & menjaga keluarga pejuang / amar ma'ruf / mencegah mungkar / menuntut ilmu / baik pergaulan & berakhlak / menjaga keselamatan jasad / ikatan taat rakyat dan pemerintah).",
+            "4. Tegaknya Negara Islam pertama atas asas yang syumul ini. Lahir kesatuan sosial, politik, dan tamadun. Ia berjaya membasmi keberhalaan, syirik, dan tipu daya di bumi Arab dan Parsi, lalu terus mara ke Eropah dari timur dan barat sehingga dua lautan (Mediterranean & Laut Merah) menjadi tasik Islam.",
+            "5. Umat Islam menerima segala tamadun dunia terdahulu dengan menyaring dan menapis intisarinya menggunakan neraca nilai dan prinsip Islam.",
+            "6. Tujuh faktor perosak mula menyusup ke dalam Daulah Islam: (1. Perpecahan politik & asabiyyah / 2. Agama bertukar menjadi debat teologi kaku / 3. Tenggelam dalam kemewahan & hawa nafsu / 4. Peralihan kuasa kepada bangsa bukan Arab / 5. Mengabaikan ilmu sains & teknologi / 6. Terpedaya dengan kekuatan sendiri / 7. Silau menjadi pak turut musuh).",
+            "7. Pertarungan Politik (I): Serangan banjir bangsa Tartar (Monggol) meruntuhkan Khilafah Abbasiyyah di Baghdad, manakala tentera Salib mengambil peluang melancarkan sembilan siri serangan menawan Baitul Maqdis.",
+            "8. Kebangkitan semula ketenteraan Islam: Panglima Salahuddin al-Ayyubi dan Zahir Baybars menangkis serangan musuh, dan Khilafah Uthmaniyyah bangkit menyempurnakan pembukaan kota Konstantinopel (Istanbul).",
+            "9. Eropah bangkit memanfaatkan ilmu daripada tamadun Islam di Andalus dan Perang Salib, menawan semula Sepanyol, meneroka jalan laut baharu, dan mengasingkan kekuasaan gereja.",
+            "10. Pertarungan Politik (II): Gelombang penjajahan baharu Eropah meruntuhkan Khilafah Uthmaniyyah selepas Perang Dunia I (1914-1918 M) dan membahagikan pesaka wilayah Islam sesama mereka melalui tipu daya 'Masalah Timur'.",
+            "11. Kebangkitan semula umat Islam menentang penjajahan: Mengambil peluang daripada krisis perpecahan bangsa Eropah untuk bersatu, menuntut kemerdekaan, dan mengembalikan kesatuan Daulah Islam di bawah panji Amirul Mukminin (al-Qasas:5).",
+            "12. Pertarungan Sosial (I): Kebangkitan ilmu pengetahuan di Eropah menumbangkan monopoli gereja, lalu membatasi peranan agama hanya di tempat ibadat dan pertapaan (Vatican).",
+            "13. Empat ciri utama tamadun Barat yang merosakkan: (a) Atheis & lalai dari akhirat (ar-Rum:7), (b) Tiada batasan moral & runtuhnya keluarga (Muhammad:12), (c) Mengagungkan individu & fanatik bangsa, (d) Riba berleluasa. Tamadun moden ini gagal menjamin kedamaian dan kebahagiaan hakiki manusia.",
+            "14. Cengkaman kebendaan (materialisme) Barat menular ke dalam negeri-negeri Islam: Kuasa penjajah mengeksport budaya kebendaan sambil menyekat pemindahan sains, perkilangan, dan faktor kekuatan umat.",
+            "15. Penjajah menguasai urusan ekonomi umat menerusi jerangkap hutang dan monopoli, mengeksport kerosakan moral, serta mendirikan institusi pendidikan asing bagi menyemai atheis dan rasa rendah diri pada anak bangsawan dan pemerintah.",
+            "16. Kekaguman melulu terhadap Barat (seperti sekularisasi di Turki dan Mesir) serta tipu daya musuh yang mempersempitkan kefahaman Islam seolah-olah ia sekadar aqidah, ibadat, dan upacara sempit sahaja.",
+            "17. Kemenangan Barat dalam perang sosial dan kebudayaan ke atas Dunia Islam menyusuli kemenangan politik dan ketenteraan, sekalipun kebenaran al-Quran tetap terpelihara abadi (al-Hijr:9, at-Taubah:32).",
+            "18. Dakwah Kita Adalah Penyelamat: Memikul tanggungjawab berat meninggikan syariat Allah tanpa menginginkan harta atau kemasyhuran duniawi (al-Qasas:83), berpandukan dua matlamat asasi: (a) Membebaskan tanah air Islam daripada kuasa asing, (b) Menegakkan Daulah Islam yang berdaulat.",
+            "19. Matlamat khas membaiki masyarakat: Memperbaiki mutu pelajaran, membebaskan ekonomi daripada riba dan monopoli asing, memerangi kemiskinan, kejahilan, penyakit, dan jenayah bagi melahirkan masyarakat contoh.",
+            "20. Tiga Rukun Wasilah Dakwah: (1) Iman yang mendalam, (2) Pembentukan yang rapi, dan (3) Kerja terus-menerus. Disertai wasilah tambahan yang syar'i dan keberanian merubah adat kebiasaan masyarakat demi kebenaran.",
+            "21. Menolak keraguan skeptikal dan bisikan was-was: Mengambil ibrah daripada sejarah umat-umat terdahulu bahawa ummah yang berjuang untuk hidup tidak akan sesekali mati.",
+            "22. Menyedari hakikat mehnah dan rintangan jalan dakwah: Tentangan ulama rasmi, kemarahan pemerintah, fitnah, tohmahan, penjara, dan sekatan adalah sunnatullah perjuangan yang mesti diharungi dengan sabar (as-Saff:8, al-'Ankabut:2).",
+            "23. Empat Faktor Kemenangan Hakiki: (1) Ketinggian fikrah Islam & syariat al-Quran (al-Baqarah:138), (2) Keperluan mendesak seluruh alam, (3) Kemurnian niat semata-mata mencari keredhaan-Nya, dan (4) Janji pertolongan Allah SWT yang tidak boleh dihalang (Muhammad:11, Yusuf:21).",
+            "24. Wasiat menyahut seruan kebangkitan: Menghayati intipati fikrah, memperkukuh kasih-sayang sesama ikhwah, mentaati kepimpinan di waktu senang dan susah, serta mengutamakan amal berbanding debat yang sia-sia.",
+            "25. Hakikat Jati Diri Gerakan: Kita bukan satu pertubuhan kebajikan, bukan parti politik, dan bukan badan terhad; kita adalah roh baharu yang mengalir di hati umat ini dan dihidupkan dengan al-Quran.",
+            "26. Kesyumulan Dakwah: Islam yang dibawa oleh Nabi Muhammad SAW merangkumi segenap urusan kehidupan; pemerintahan adalah sebahagian daripada ajarannya dan kebebasan adalah salah satu tuntutannya.",
+            "27. Ketegasan Mempertahankan Kebenaran: Kita adalah penyeru kebenaran dan kedamaian, namun tidak akan berkompromi terhadap kezaliman. Bersiap-siagalah menunggu pertolongan Allah yang pasti membahagiakan orang-orang mukmin (ar-Rum:4-5)."
           ]
         }
       ]
@@ -606,107 +606,107 @@ window.ANTARA_SEMALAM_DATA = {
     },
     {
       "num": 2,
-      "text": "Al-Quran menjelaskan segala usul pemulihan sosial berasaskan 11 prinsip: (Rabbaniah / ketinggian martabat manusia / akidah pembalasan / ukhuwah kemanusiaan / kesaksamaan lelaki dan wanita / jaminan sosial / mengekang nafsu / ketegasan undang-undang / penyatuan ummah / kewajipan jihad menegakkan kebenaran / kepentingan kewujudan negara Islam)."
+      "text": "Al-Quran menjelaskan segala usul pemulihan masyarakat berasaskan 11 kaedah: (Rabbaniah / ketinggian jiwa manusia / akidah pembalasan akhirat / persaudaraan kemanusiaan / persamaan tanggungjawab lelaki dan wanita / jaminan sosial masyarakat / mengatur keinginan perut dan seks / ketegasan memerangi jenayah / menguatkan kesatuan ummah / kewajipan jihad menegakkan kebenaran / negara sebagai wakil fikrah Islam)."
     },
     {
       "num": 3,
-      "text": "Perlunya amalan di samping teori. Kewajipan syiar Islam melahirkan hasil pemulihan manusia yang praktikal: (Solat & munajat / puasa & iffah / zakat & infaq / haji & tadabbur / usaha & kerja / jihad / amar makruf nahi mungkar / menuntut ilmu / muamalah berakhlak / memelihara kesihatan jasad / solidariti rakyat dan pemerintah)."
+      "text": "Perlunya amalan di samping teori: Kewajipan syiar Islam melahirkan hasil pemulihan yang praktikal: (Solat & munajat / puasa & menjaga diri / zakat & infaq / haji & tadabbur kerajaan Allah / usaha & kerja / jihad & menjaga keluarga pejuang / amar ma'ruf / mencegah mungkar / menuntut ilmu / baik pergaulan & berakhlak / menjaga keselamatan jasad / ikatan taat rakyat dan pemerintah)."
     },
     {
       "num": 4,
-      "text": "Tegaknya Negara Islam pertama atas asas yang syumul ini. Lahir kesatuan sosial, politik dan peradaban. Ia berjaya membasmi keberhalaan, syirik, dan kekeliruan ahli kitab dari bumi Arab, lalu terus mara ke timur dan barat sehingga menguasai lautan dunia."
+      "text": "Tegaknya Negara Islam pertama atas asas yang syumul ini. Lahir kesatuan sosial, politik, dan tamadun. Ia berjaya membasmi keberhalaan, syirik, dan tipu daya di bumi Arab dan Parsi, lalu terus mara ke Eropah dari timur dan barat sehingga dua lautan (Mediterranean & Laut Merah) menjadi tasik Islam."
     },
     {
       "num": 5,
-      "text": "Umat Islam menerima segala tamadun dunia terdahulu dengan tapisan neraca nilai Islam."
+      "text": "Umat Islam menerima segala tamadun dunia terdahulu dengan menyaring dan menapis intisarinya menggunakan neraca nilai dan prinsip Islam."
     },
     {
       "num": 6,
-      "text": "Faktor-faktor kelemahan mula menyusup ke dalam tubuh umat: (Perselisihan politik & perebutan kuasa / agama bertukar menjadi perdebatan teologi yang kaku / tenggelam dalam kemewahan duniawi / peralihan kuasa kepada bangsa asing / kelalaian terhadap ilmu sains & teknologi / ghurur dengan kekuatan sendiri / terpedaya menjadi pak turut kuasa asing)."
+      "text": "Tujuh faktor perosak mula menyusup ke dalam Daulah Islam: (1. Perpecahan politik & asabiyyah / 2. Agama bertukar menjadi debat teologi kaku / 3. Tenggelam dalam kemewahan & hawa nafsu / 4. Peralihan kuasa kepada bangsa bukan Arab / 5. Mengabaikan ilmu sains & teknologi / 6. Terpedaya dengan kekuatan sendiri / 7. Silau menjadi pak turut musuh)."
     },
     {
       "num": 7,
-      "text": "Fasa Pertarungan Politik (I): Serangan ganas bangsa Tatar / Mongol yang meruntuhkan Khilafah Abbasiyyah di Baghdad, manakala tentera Salib mengambil peluang menyerang negeri-negeri Islam."
+      "text": "Pertarungan Politik (I): Serangan banjir bangsa Tartar (Monggol) meruntuhkan Khilafah Abbasiyyah di Baghdad, manakala tentera Salib mengambil peluang melancarkan sembilan siri serangan menawan Baitul Maqdis."
     },
     {
       "num": 8,
-      "text": "Kebangkitan semula ketenteraan Islam: Panglima Salahuddin al-Ayyubi dan Zahir Baybars berjaya menangkis serangan musuh, dan Khilafah Uthmaniyyah bangkit menawan kota Konstantinopel (Istanbul)."
+      "text": "Kebangkitan semula ketenteraan Islam: Panglima Salahuddin al-Ayyubi dan Zahir Baybars menangkis serangan musuh, dan Khilafah Uthmaniyyah bangkit menyempurnakan pembukaan kota Konstantinopel (Istanbul)."
     },
     {
       "num": 9,
-      "text": "Eropah bangkit memanfaatkan ilmu daripada tamadun Islam: Mereka menawan semula Sepanyol (Andalusia), meneroka jalan laut baharu, dan mencipta teknologi sains moden secara pesat."
+      "text": "Eropah bangkit memanfaatkan ilmu daripada tamadun Islam di Andalus dan Perang Salib, menawan semula Sepanyol, meneroka jalan laut baharu, dan mengasingkan kekuasaan gereja."
     },
     {
       "num": 10,
-      "text": "Fasa Pertarungan Politik (II): Gelombang penjajahan baharu Barat menjajah negeri-negeri Islam dan meruntuhkan Khilafah Uthmaniyyah selepas Perang Dunia Pertama, lalu membahagikan wilayah Islam sesama mereka."
+      "text": "Pertarungan Politik (II): Gelombang penjajahan baharu Eropah meruntuhkan Khilafah Uthmaniyyah selepas Perang Dunia I (1914-1918 M) dan membahagikan pesaka wilayah Islam sesama mereka melalui tipu daya 'Masalah Timur'."
     },
     {
       "num": 11,
-      "text": "Kebangkitan semula umat Islam menentang penjajahan: Gerakan kebangkitan mula bangun menuntut kebebasan, kedaulatan, dan kemerdekaan tanah air."
+      "text": "Kebangkitan semula umat Islam menentang penjajahan: Mengambil peluang daripada krisis perpecahan bangsa Eropah untuk bersatu, menuntut kemerdekaan, dan mengembalikan kesatuan Daulah Islam di bawah panji Amirul Mukminin (al-Qasas:5)."
     },
     {
       "num": 12,
-      "text": "Fasa Pertarungan Sosial (I): Tamadun Islam membuka mata Eropah, namun ditentang keras oleh pihak gereja; akhirnya gereja tewas dan kuasa agama disingkirkan daripada urusan negara dan masyarakat."
+      "text": "Pertarungan Sosial (I): Kebangkitan ilmu pengetahuan di Eropah menumbangkan monopoli gereja, lalu membatasi peranan agama hanya di tempat ibadat dan pertapaan (Vatican)."
     },
     {
       "num": 13,
-      "text": "Kemajuan kebendaan Eropah tanpa roh agama: Lahir pelbagai kerosakan akibat fahaman materialisme (menolak Tuhan / kebebasan mutlak tanpa batas moral / individualisme melampau / riba dan penindasan). Tamadun Barat gagal memberikan kebahagiaan hakiki kepada jiwa manusia."
+      "text": "Empat ciri utama tamadun Barat yang merosakkan: (a) Atheis & lalai dari akhirat (ar-Rum:7), (b) Tiada batasan moral & runtuhnya keluarga (Muhammad:12), (c) Mengagungkan individu & fanatik bangsa, (d) Riba berleluasa. Tamadun moden ini gagal menjamin kedamaian dan kebahagiaan hakiki manusia."
     },
     {
       "num": 14,
-      "text": "Cengkaman kebendaan (materialisme) Barat menular ke dalam Dunia Islam: Kuasa penjajah mengeksport budaya hedonisme dan menyekat segala unsur kekuatan umat."
+      "text": "Cengkaman kebendaan (materialisme) Barat menular ke dalam negeri-negeri Islam: Kuasa penjajah mengeksport budaya kebendaan sambil menyekat pemindahan sains, perkilangan, dan faktor kekuatan umat."
     },
     {
       "num": 15,
-      "text": "Kuasa Eropah menguasai ekonomi umat, memaksakan cara hidup liberal, dan mendirikan sekolah-sekolah asing untuk melancarkan serangan pemikiran (ghazwul fikr)."
+      "text": "Penjajah menguasai urusan ekonomi umat menerusi jerangkap hutang dan monopoli, mengeksport kerosakan moral, serta mendirikan institusi pendidikan asing bagi menyemai atheis dan rasa rendah diri pada anak bangsawan dan pemerintah."
     },
     {
       "num": 16,
-      "text": "Sebahagian umat Islam mula silau dan kagum dengan Barat, lalu membuang syariat Islam (seperti gerakan sekularisasi di Turki), manakala ajaran Islam digambarkan secara keliru dan terpesong."
+      "text": "Kekaguman melulu terhadap Barat (seperti sekularisasi di Turki dan Mesir) serta tipu daya musuh yang mempersempitkan kefahaman Islam seolah-olah ia sekadar aqidah, ibadat, dan upacara sempit sahaja."
     },
     {
       "num": 17,
-      "text": "Eropah berjaya memenangi perang sosial dan budaya ke atas Dunia Islam selepas memenangi perang politik dan ketenteraan."
+      "text": "Kemenangan Barat dalam perang sosial dan kebudayaan ke atas Dunia Islam menyusuli kemenangan politik dan ketenteraan, sekalipun kebenaran al-Quran tetap terpelihara abadi (al-Hijr:9, at-Taubah:32)."
     },
     {
       "num": 18,
-      "text": "Dakwah Kita Adalah Penyelamat: Memikul bebanan yang berat tanpa mengharapkan pangkat atau harta duniawi; matlamat kita hanyalah membebaskan tanah air Islam dan mendirikan Daulah Islamiyah yang adil."
+      "text": "Dakwah Kita Adalah Penyelamat: Memikul tanggungjawab berat meninggikan syariat Allah tanpa menginginkan harta atau kemasyhuran duniawi (al-Qasas:83), berpandukan dua matlamat asasi: (a) Membebaskan tanah air Islam daripada kuasa asing, (b) Menegakkan Daulah Islam yang berdaulat."
     },
     {
       "num": 19,
-      "text": "Membina semula kualiti keilmuan masyarakat, memartabatkan taraf hidup, serta membasmi kejahilan, kemiskinan, dan penyakit sosial."
+      "text": "Matlamat khas membaiki masyarakat: Memperbaiki mutu pelajaran, membebaskan ekonomi daripada riba dan monopoli asing, memerangi kemiskinan, kejahilan, penyakit, dan jenayah bagi melahirkan masyarakat contoh."
     },
     {
       "num": 20,
-      "text": "Tiga Tonggak Gerakan Kita: (1) Iman yang mendalam, (2) Pembentukan kader yang rapi, dan (3) Amal kerja yang berterusan. Wasilah kita adalah segala jalan yang syar'i dan berani mendepani masyarakat untuk melakukan islah."
+      "text": "Tiga Rukun Wasilah Dakwah: (1) Iman yang mendalam, (2) Pembentukan yang rapi, dan (3) Kerja terus-menerus. Disertai wasilah tambahan yang syar'i dan keberanian merubah adat kebiasaan masyarakat demi kebenaran."
     },
     {
       "num": 21,
-      "text": "Bersedia menghadapi sikap golongan yang memandang remeh kerja dakwah dan menganggapnya mustahil untuk merubah keadaan."
+      "text": "Menolak keraguan skeptikal dan bisikan was-was: Mengambil ibrah daripada sejarah umat-umat terdahulu bahawa ummah yang berjuang untuk hidup tidak akan sesekali mati."
     },
     {
       "num": 22,
-      "text": "Menyedari hakikat rintangan perjuangan: Dakwah ini pasti akan ditentang oleh pihak yang berkepentingan apabila mereka menyedari hakikatnya; fitnah, tohmahan, penjara, dan ujian pengusiran adalah sunnatullah perjuangan."
+      "text": "Menyedari hakikat mehnah dan rintangan jalan dakwah: Tentangan ulama rasmi, kemarahan pemerintah, fitnah, tohmahan, penjara, dan sekatan adalah sunnatullah perjuangan yang mesti diharungi dengan sabar (as-Saff:8, al-'Ankabut:2)."
     },
     {
       "num": 23,
-      "text": "Keyakinan penuh terhadap kemenangan: Kemenangan pasti berpihak kepada kita berasaskan kesucian dakwah, keperluan mendesak umat manusia, keikhlasan niat, dan janji pertolongan Allah SWT."
+      "text": "Empat Faktor Kemenangan Hakiki: (1) Ketinggian fikrah Islam & syariat al-Quran (al-Baqarah:138), (2) Keperluan mendesak seluruh alam, (3) Kemurnian niat semata-mata mencari keredhaan-Nya, dan (4) Janji pertolongan Allah SWT yang tidak boleh dihalang (Muhammad:11, Yusuf:21)."
     },
     {
       "num": 24,
-      "text": "Kewajipan segera menyahut seruan kebangkitan, memantapkan kefahaman fikrah, serta memperkukuh kesatuan saf pendakwah."
+      "text": "Wasiat menyahut seruan kebangkitan: Menghayati intipati fikrah, memperkukuh kasih-sayang sesama ikhwah, mentaati kepimpinan di waktu senang dan susah, serta mengutamakan amal berbanding debat yang sia-sia."
     },
     {
       "num": 25,
-      "text": "Hakikat Gerakan Kita: Kita bukan parti politik konvensional, bukan pertubuhan kebajikan terhad, dan bukan persatuan sempit. Kita adalah roh baharu yang mengalir di hati umat ini."
+      "text": "Hakikat Jati Diri Gerakan: Kita bukan satu pertubuhan kebajikan, bukan parti politik, dan bukan badan terhad; kita adalah roh baharu yang mengalir di hati umat ini dan dihidupkan dengan al-Quran."
     },
     {
       "num": 26,
-      "text": "Sifat Syumul Dakwah: Dakwah kita merangkumi seluruh aspek Islam, dan urusan pentadbiran / pemerintahan adalah sebahagian daripada ajarannya."
+      "text": "Kesyumulan Dakwah: Islam yang dibawa oleh Nabi Muhammad SAW merangkumi segenap urusan kehidupan; pemerintahan adalah sebahagian daripada ajarannya dan kebebasan adalah salah satu tuntutannya."
     },
     {
       "num": 27,
-      "text": "Prinsip Keamanan & Ketegasan: Kita bukan golongan pemusnah, tetapi kita tidak akan sesekali berkompromi dan akan bangkit menentang sesiapa sahaja yang menghalang kebenaran syariat Allah."
+      "text": "Ketegasan Mempertahankan Kebenaran: Kita adalah penyeru kebenaran dan kedamaian, namun tidak akan berkompromi terhadap kezaliman. Bersiap-siagalah menunggu pertolongan Allah yang pasti membahagiakan orang-orang mukmin (ar-Rum:4-5)."
     }
   ]
 };

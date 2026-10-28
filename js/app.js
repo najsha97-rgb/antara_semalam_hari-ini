@@ -41,6 +41,78 @@
   const btnPrevSub = document.getElementById('btnPrevSub');
   const btnNextSub = document.getElementById('btnNextSub');
   const bottomNav = document.getElementById('bottomNav');
+  const btnCopyChapter = document.getElementById('btnCopyChapter');
+
+  // Clipboard & Toast Utilities
+  function showToast(message) {
+    let toast = document.getElementById('copyToast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'copyToast';
+      toast.className = 'app-toast';
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = `<span style="color: var(--emerald-light); margin-right: 8px; font-size: 1.1rem;">✓</span> ${message}`;
+    toast.classList.add('show');
+    clearTimeout(toast._timeout);
+    toast._timeout = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 2600);
+  }
+
+  function copyToClipboard(text, successMsg = 'Teks berjaya disalin!') {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(successMsg);
+      }).catch(() => {
+        fallbackCopy(text, successMsg);
+      });
+    } else {
+      fallbackCopy(text, successMsg);
+    }
+  }
+
+  function fallbackCopy(text, successMsg) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-999999px';
+    textArea.style.top = '-999999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      document.execCommand('copy');
+      showToast(successMsg);
+    } catch (err) {
+      console.error('Copy failed:', err);
+      showToast('Sila salin teks secara manual.');
+    }
+    document.body.removeChild(textArea);
+  }
+
+  function copyCurrentSubtopicText() {
+    if (!appData) return;
+    const ch = appData.chapters[state.currentChapter];
+    if (!ch) return;
+    const sub = ch.subtopics[state.currentSubtopic];
+    if (!sub) return;
+
+    let textToCopy = `📖 ANTARA SEMALAM DAN HARI INI (بين الأمس واليوم)\n`;
+    textToCopy += `Al-Imam Asy-Syahid Hasan al-Banna\n`;
+    textToCopy += `────────────────────────────────\n`;
+    textToCopy += `${ch.number}: ${ch.title.toUpperCase()}\n`;
+    if (sub.title && sub.title !== `Teks Utama: ${ch.title}`) {
+      textToCopy += `Subtopik: ${sub.title}\n`;
+    }
+    textToCopy += `────────────────────────────────\n\n`;
+
+    const cleanParagraphs = sub.paragraphs.filter(p => !p.trim().startsWith('<!-- PAGE'));
+    textToCopy += cleanParagraphs.join('\n\n');
+    textToCopy += `\n\n🔗 Sumber: https://najsha97-rgb.github.io/antara_semalam_hari-ini/`;
+
+    copyToClipboard(textToCopy, `Teks ${sub.menu_title || 'bab'} berjaya disalin!`);
+  }
 
   // Initialize Theme
   document.documentElement.setAttribute('data-theme', state.theme);
@@ -132,6 +204,11 @@
     }
     if (btnNextSub) {
       btnNextSub.addEventListener('click', navigateNext);
+    }
+
+    // Copy Section Button
+    if (btnCopyChapter) {
+      btnCopyChapter.addEventListener('click', copyCurrentSubtopicText);
     }
   }
 
@@ -278,9 +355,25 @@
         pageBadge.innerHTML = `<span style="background: rgba(52, 211, 153, 0.15); color: var(--emerald-light); font-size: 0.76rem; font-weight: 700; padding: 3px 12px; border-radius: 9999px; border: 1px solid rgba(52, 211, 153, 0.3);">${pClean.replace(/\*|<!--|-->/g, '').trim()}</span>`;
         articleContent.appendChild(pageBadge);
       } else if (pClean.startsWith('"') || pClean.startsWith('“') || pClean.startsWith('”') || pClean.startsWith('«') || pClean.startsWith('> ')) {
+        const quoteWrapper = document.createElement('div');
+        quoteWrapper.className = 'quote-wrapper';
+
         const quoteBox = document.createElement('blockquote');
-        quoteBox.textContent = pClean.replace(/^>\s*/, '');
-        articleContent.appendChild(quoteBox);
+        const cleanText = pClean.replace(/^>\s*/, '');
+        quoteBox.textContent = cleanText;
+
+        const copyQuoteBtn = document.createElement('button');
+        copyQuoteBtn.className = 'btn-quote-copy';
+        copyQuoteBtn.title = 'Salin petikan ini';
+        copyQuoteBtn.innerHTML = '📋 <span>Salin</span>';
+        copyQuoteBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          copyToClipboard(`${cleanText}\n\n— Antara Semalam dan Hari Ini (Imam Hasan al-Banna)`, 'Petikan berjaya disalin!');
+        });
+
+        quoteWrapper.appendChild(quoteBox);
+        quoteWrapper.appendChild(copyQuoteBtn);
+        articleContent.appendChild(quoteWrapper);
       } else if (/^(?:i|ii|iii|iv|v|vi|vii)\)/i.test(pClean)) {
         const h4El = document.createElement('h4');
         h4El.style.color = 'var(--gold-primary)';
@@ -322,6 +415,23 @@
       <p style="font-weight: 700; color: var(--gold-primary); margin-bottom: 0.4rem; font-size: 1.05rem;">💡 Rumusan 27 Prinsip Kebangkitan:</p>
       <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">Berikut adalah rumusan padat 27 prinsip yang digariskan oleh Al-Imam Hasan al-Banna di bahagian akhir risalah 'Antara Semalam dan Hari Ini' sebagai panduan kebangkitan umat, tersusun rapi dari nombor 1 hingga 27 dari atas ke bawah.</p>
     `;
+
+    const copyAllBtn = document.createElement('button');
+    copyAllBtn.className = 'btn-copy-section';
+    copyAllBtn.style.marginTop = '0.9rem';
+    copyAllBtn.innerHTML = '<span class="copy-icon">📋</span> <span class="copy-text">Salin Semua 27 Prinsip</span>';
+    copyAllBtn.addEventListener('click', () => {
+      let allText = `📋 RINGKASAN 27 PRINSIP: ANTARA SEMALAM DAN HARI INI\n`;
+      allText += `Al-Imam Asy-Syahid Hasan al-Banna\n`;
+      allText += `────────────────────────────────\n\n`;
+      items.forEach(it => {
+        allText += `${it.num}. ${it.text}\n\n`;
+      });
+      allText += `🔗 https://najsha97-rgb.github.io/antara_semalam_hari-ini/`;
+      copyToClipboard(allText, 'Semua 27 Prinsip berjaya disalin!');
+    });
+    introBox.appendChild(copyAllBtn);
+
     ringkasanSection.appendChild(introBox);
 
     const listContainer = document.createElement('div');
@@ -344,6 +454,14 @@
             ${it.text}
           </div>
         `;
+        const copyItemBtn = document.createElement('button');
+        copyItemBtn.className = 'btn-item-copy';
+        copyItemBtn.title = 'Salin prinsip ini';
+        copyItemBtn.innerHTML = '📋';
+        copyItemBtn.addEventListener('click', () => {
+          copyToClipboard(`${it.num}. ${it.text}\n\n— 27 Prinsip Risalah Antara Semalam dan Hari Ini`, `Prinsip ${it.num} berjaya disalin!`);
+        });
+        card.appendChild(copyItemBtn);
         listContainer.appendChild(card);
       });
     } else {
@@ -398,6 +516,16 @@
             <div class="hikmah-lesson">💡 <strong>Iktibar:</strong> ${q.lesson}</div>
           </div>
         `;
+
+        const copyHikmahBtn = document.createElement('button');
+        copyHikmahBtn.className = 'btn-quote-copy-bottom';
+        copyHikmahBtn.innerHTML = '<span>📋 Salin Mutiara</span>';
+        copyHikmahBtn.addEventListener('click', () => {
+          const qText = `"${q.text}"\n— ${q.author}\n💡 Iktibar: ${q.lesson}\n\n(Risalah Antara Semalam dan Hari Ini)`;
+          copyToClipboard(qText, 'Mutiara kata berjaya disalin!');
+        });
+        card.appendChild(copyHikmahBtn);
+
         grid.appendChild(card);
       });
     }
