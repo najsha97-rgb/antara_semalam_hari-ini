@@ -51,17 +51,17 @@ window.ANTARA_SEMALAM_DATA = {
           "title": "Kaedah-kaedah Perubahan Masyarakat (Yang Menyeluruh)",
           "menu_title": "Kaedah-kaedah Perubahan Masyarakat",
           "paragraphs": [
-            "1) Ketuhanan (Rabbaniah).",
-            "2) Ketinggian jiwa manusia.",
-            "3) Peneguhan aqidah terhadap adanya pembalasan.",
-            "4) Pengisytiharan persaudaran di kalangan manusia.",
-            "5) Membangunkan seluruh laki-laki dan wanita serta pengisytiharan tanggungjawab dan persamaan di antara keduanya serta penentuan tugas masing-masing secara detail.",
-            "6) Jaminan untuk masyarakat dengan penetapkan hak-hak kehidupan, pemilikan, kerja, kesihatan, kebebasan, pelajaran, keselamatan individu dan penentuan sumber laba.",
-            "7) Memelihara dua kehendak semulajadi; keinginan memelihara jiwa dan memelihara keturunan dengan mengatur keinginan perut dan seks.",
-            "8) Keras dan kesungguhan dalam memerangi jenayah-jenayah berat.",
-            "9) Menguatkan kesatuan umat ini menghapuskan seluruh unsur-unsur dan sebab yang membawa perpecahan umat.",
-            "10) Mewajibkan umat supaya berjihad dalam menegakkan prinsip-prinsip kebenaran yang didatangkan oleh sistem ini.",
-            "11) Menjadikan negara sebagai wakil kepada fikrah Islam dan negara bertanggungjawab melindunginya. Negara juga bertanggungjawab untuk melaksanakan matlamatnya dalam masyarakat yang khusus (Negara Islam) dan menyampaikan fikrah ini kepada seluruh manusia."
+            "1- Ketuhanan (Rabbaniah).",
+            "2- Mengangkat martabat manusia.",
+            "3- Mengesahkan adanya hari pembalasan.",
+            "4- Pengisytiharan persaudaran dalam kalangan manusia.",
+            "5- Mengajak kaum laki-laki dan wanita supaya bangkit bersama. Mengisytiharkan kerjasama dan persamaan antara keduanya serta penentuan tugas masing-masing secara terperinci.",
+            "6- Jaminan kestabilan masyarakat dengan memperaku hak-hak untuk hidup, pemilikan harta, kerja, kesihatan, kebebasan, pelajaran, keselamatan individu dan hak menentukan sumber pendapatan.",
+            "7- Mengawal dua naluri manusia iaitu naluri memelihara nyawa dan memelihara kesinambungan zuriat dengan mengatur keinginan perut dan seks.",
+            "8- Tegas dalam memerangi jenayah-jenayah berat.",
+            "9- Memelihara kesatuan umat Islam dan menghapuskan segala bentuk dan punca yang membawa perpecahan umat.",
+            "10- Mewajibkan umat Islam supaya berjihad dalam menegakkan prinsip-prinsip kebenaran yang diketengahkan oleh sistem ini.",
+            "11- Menjadikan negara sebagai wakil kepada gagasan Islam dan negara bertanggungjawab melindunginya. Negara juga bertanggungjawab untuk mencapai matlamat gagasan ini dalam masyarakat dan menyampaikan gagasan ini kepada seluruh manusia."
           ]
         }
       ]
