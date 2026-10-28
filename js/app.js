@@ -271,15 +271,15 @@
       const pClean = p.trim();
       if (!pClean) return;
 
-      if (pClean.startsWith('<!-- PAGE')) {
+      if (pClean.startsWith('<!-- PAGE') || (pClean.startsWith('*<!--') && pClean.endsWith('-->*'))) {
         const pageBadge = document.createElement('div');
         pageBadge.style.margin = '2rem 0 1rem 0';
         pageBadge.style.textAlign = 'center';
-        pageBadge.innerHTML = `<span style="background: rgba(52, 211, 153, 0.15); color: var(--emerald-light); font-size: 0.76rem; font-weight: 700; padding: 3px 12px; border-radius: 9999px; border: 1px solid rgba(52, 211, 153, 0.3);">${pClean.replace('<!--', '').replace('-->', '').trim()}</span>`;
+        pageBadge.innerHTML = `<span style="background: rgba(52, 211, 153, 0.15); color: var(--emerald-light); font-size: 0.76rem; font-weight: 700; padding: 3px 12px; border-radius: 9999px; border: 1px solid rgba(52, 211, 153, 0.3);">${pClean.replace(/\*|<!--|-->/g, '').trim()}</span>`;
         articleContent.appendChild(pageBadge);
-      } else if (pClean.startsWith('"') || pClean.startsWith('“') || pClean.includes('Firman Allah')) {
+      } else if (pClean.startsWith('"') || pClean.startsWith('“') || pClean.startsWith('”') || pClean.startsWith('«') || pClean.startsWith('> ')) {
         const quoteBox = document.createElement('blockquote');
-        quoteBox.textContent = pClean;
+        quoteBox.textContent = pClean.replace(/^>\s*/, '');
         articleContent.appendChild(quoteBox);
       } else {
         const paraEl = document.createElement('p');
