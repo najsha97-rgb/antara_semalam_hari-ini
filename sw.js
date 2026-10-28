@@ -1,4 +1,4 @@
-const CACHE_NAME = 'antara-semalam-v7-alquran-scan-20261028';
+const CACHE_NAME = 'antara-semalam-v8-nya-hyphen-20261028';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
