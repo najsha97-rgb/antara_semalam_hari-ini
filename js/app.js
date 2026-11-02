@@ -5,6 +5,38 @@
 (function () {
   'use strict';
 
+  // Wawasan Peradaban & Ummah Fadhilah Modal Handlers
+  window.openPeradabanModal = function () {
+    const m = document.getElementById('modalPeradabanSpotlight');
+    if (m) {
+      m.classList.add('show');
+      m.style.setProperty('display', 'flex', 'important');
+      document.body.style.overflow = 'hidden';
+      const b = m.querySelector('.peradaban-modal-body, .tarbiah-modal-body');
+      if (b) b.scrollTop = 0;
+    }
+  };
+
+  window.closePeradabanModal = function () {
+    const m = document.getElementById('modalPeradabanSpotlight');
+    if (m) {
+      m.classList.remove('show');
+      m.style.setProperty('display', 'none', 'important');
+      document.body.style.overflow = '';
+    }
+  };
+
+  window.togglePeradabanModal = function (show) {
+    if (show) window.openPeradabanModal();
+    else window.closePeradabanModal();
+  };
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      window.closePeradabanModal();
+    }
+  });
+
   let appData = window.ANTARA_SEMALAM_DATA || null;
 
   const state = {

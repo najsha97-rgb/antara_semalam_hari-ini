@@ -1,4 +1,4 @@
-const CACHE_NAME = 'antara-semalam-v42-hikmah-amiri-gold-20261102';
+const CACHE_NAME = 'antara-semalam-v43-wawasan-peradaban-20261102';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
