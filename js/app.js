@@ -839,7 +839,7 @@
         openingWrapper.setAttribute('data-pidx', pIdx);
         openingWrapper.className = 'risalah-opening-banner';
         openingWrapper.innerHTML = `
-          <div class="ar-basmallah" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+          <div class="ar-basmallah" dir="rtl">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</div>
           <div class="ar-tahmid" dir="rtl">الحمد لله و صلى الله على سيدنا محمد الفاتح الخاتم , و على آله و صحبه وسلم تسليما كثيرا</div>
         `;
         articleContent.appendChild(openingWrapper);
