@@ -518,7 +518,7 @@ body {
 }
 
 /* ==========================================================================
-   HIKMAH QUOTES GRID VIEW
+   HIKMAH QUOTES GRID VIEW (AMIRI GOLD & FIQH HARAKI)
    ========================================================================== */
 .hikmah-grid {
   display: grid;
@@ -546,7 +546,34 @@ body {
   box-shadow: var(--shadow-gold);
 }
 
+.hikmah-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.85rem;
+}
+
+.hikmah-card-speaker {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--gold-light, #f5c542);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hikmah-card-index {
+  font-size: 0.74rem;
+  color: var(--gold-light, #f5c542);
+  font-weight: 700;
+  background: rgba(212, 175, 55, 0.12);
+  padding: 2px 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
 .hikmah-badge {
+  display: inline-block;
   align-self: flex-start;
   background: rgba(245, 197, 66, 0.15);
   color: var(--gold-primary);
@@ -554,15 +581,55 @@ body {
   font-size: 0.75rem;
   padding: 3px 10px;
   border-radius: var(--radius-pill);
+  margin-bottom: 0.85rem;
+}
+
+.hikmah-card-body {
+  font-size: 0.96rem;
+  line-height: 1.75;
+  color: var(--text-primary);
+  flex: 1;
   margin-bottom: 1rem;
 }
 
+.hikmah-card-body .ar-quote,
+.ar-quote {
+  display: block !important;
+  font-family: 'Amiri', 'Traditional Arabic', serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 1.35rem !important;
+  line-height: 2.2 !important;
+  color: var(--gold-light, #fde047) !important;
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: isolate !important;
+  margin: 0.6rem 0 0.85rem 0 !important;
+  padding: 10px 16px !important;
+  background: rgba(212, 175, 55, 0.08) !important;
+  border-right: 4px solid var(--gold-primary, #d4af37) !important;
+  border-left: none !important;
+  border-radius: 8px !important;
+  word-spacing: 0.08em !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .hikmah-card-body .ar-quote,
+[data-theme="light"] .ar-quote {
+  color: #8c6b00 !important;
+  background: rgba(212, 175, 55, 0.1) !important;
+  border-right-color: #b38600 !important;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.08);
+}
+
+.hikmah-trans-text,
 .hikmah-quote-text {
-  font-size: 1.1rem;
+  font-size: 1.02rem;
   line-height: 1.75;
-  font-style: italic;
+  font-style: italic !important;
   color: var(--text-primary);
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.85rem;
+  padding: 2px 4px;
 }
 
 .hikmah-author {
@@ -577,6 +644,42 @@ body {
   color: var(--text-muted);
   border-top: 1px dashed var(--border-color);
   padding-top: 0.75rem;
+}
+
+/* Kotak Dimensi Fiqh Haraki */
+.hikmah-fiqh-box {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-left: 3px solid var(--emerald-primary, #10b981);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 0.65rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+[data-theme="light"] .hikmah-fiqh-box {
+  background: rgba(16, 185, 129, 0.06);
+  border-color: rgba(5, 150, 105, 0.25);
+}
+
+.hikmah-fiqh-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--emerald-primary, #10b981);
+  background: rgba(16, 185, 129, 0.15);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.hikmah-fiqh-text {
+  color: var(--text-secondary, #94a3b8);
+  font-size: 0.88rem;
+  line-height: 1.6;
 }
 
 /* ==========================================================================

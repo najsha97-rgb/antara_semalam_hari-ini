@@ -971,12 +971,21 @@
         card.setAttribute('data-quote-id', q.id);
         card.innerHTML = `
           <div>
+            <div class="hikmah-card-top">
+              <span class="hikmah-card-speaker">👤 ${q.author || 'Imam Hasan al-Banna'}</span>
+              <span class="hikmah-card-index">#${q.id}</span>
+            </div>
             <div class="hikmah-badge">${q.topic}</div>
-            <div class="hikmah-quote-text">"${q.text}"</div>
-          </div>
-          <div>
-            <div class="hikmah-author">— ${q.author}</div>
-            <div class="hikmah-lesson">💡 <strong>Iktibar:</strong> ${q.lesson}</div>
+            <div class="hikmah-card-body">
+              ${q.arabic ? `<div class="ar-quote" dir="rtl" style="direction: rtl !important; text-align: right !important;">« ${q.arabic} »</div>` : ''}
+              <div class="hikmah-trans-text hikmah-quote-text">"${q.text}"</div>
+              ${q.lesson ? `
+                <div class="hikmah-fiqh-box">
+                  <span class="hikmah-fiqh-badge">⚔️ Fiqh Haraki</span>
+                  <div class="hikmah-fiqh-text">${q.lesson}</div>
+                </div>
+              ` : ''}
+            </div>
           </div>
         `;
 
@@ -984,7 +993,13 @@
         copyHikmahBtn.className = 'btn-quote-copy-bottom';
         copyHikmahBtn.innerHTML = '<span>📋 Salin Mutiara</span>';
         copyHikmahBtn.addEventListener('click', () => {
-          const qText = `"${q.text}"\n— ${q.author}\n💡 Iktibar: ${q.lesson}\n\n(Risalah Antara Semalam dan Hari Ini)`;
+          const qText = `✨ MUTIARA HIKMAH PERJUANGAN #${q.id}\n👤 ${q.author}\n📌 Topik: ${q.topic}\n` +
+            `────────────────────\n\n` +
+            (q.arabic ? `« ${q.arabic} »\n\n` : '') +
+            `"${q.text}"\n\n` +
+            `⚔️ Fiqh Haraki: ${q.lesson}\n\n` +
+            `📖 Risalah Antara Semalam dan Hari Ini\n` +
+            `🌐 https://najsha97-rgb.github.io/antara_semalam_hari-ini/`;
           copyToClipboard(qText, 'Mutiara kata berjaya disalin!');
         });
         card.appendChild(copyHikmahBtn);
