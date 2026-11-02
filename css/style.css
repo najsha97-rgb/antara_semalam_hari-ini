@@ -910,6 +910,68 @@ body {
   padding-right: 3.5rem;
 }
 
+/* =======================================================
+   OPENING BANNER: BASMALLAH & TAHMID (BAB 1)
+   ======================================================= */
+.risalah-opening-banner {
+  text-align: center;
+  margin: 1.5rem 0 2.2rem 0;
+  padding: 1.8rem 1.4rem;
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(16, 185, 129, 0.05) 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ar-basmallah {
+  font-family: 'Amiri', 'Traditional Arabic', serif !important;
+  font-size: 2.35rem !important;
+  font-weight: 700 !important;
+  color: var(--gold-primary, #d4af37) !important;
+  line-height: 1.85 !important;
+  direction: rtl !important;
+  text-align: center !important;
+  margin-bottom: 0.85rem !important;
+  text-shadow: 0 2px 10px rgba(212, 175, 55, 0.28);
+}
+
+.ar-tahmid {
+  font-family: 'Amiri', 'Traditional Arabic', serif !important;
+  font-size: 1.25rem !important;
+  font-weight: 400 !important;
+  color: var(--gold-light, #fde047) !important;
+  line-height: 2.3 !important;
+  direction: rtl !important;
+  text-align: center !important;
+  margin: 0 !important;
+  word-spacing: 0.1em;
+}
+
+[data-theme="light"] .risalah-opening-banner {
+  border-color: rgba(179, 134, 0, 0.35);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(16, 185, 129, 0.08) 100%);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.1);
+}
+
+[data-theme="light"] .ar-basmallah {
+  color: #8c6b00 !important;
+  text-shadow: none;
+}
+
+[data-theme="light"] .ar-tahmid {
+  color: #735700 !important;
+}
+
+@media (max-width: 640px) {
+  .ar-basmallah {
+    font-size: 1.85rem !important;
+  }
+  .ar-tahmid {
+    font-size: 1.12rem !important;
+    line-height: 2.1 !important;
+  }
+}
+
 /* Kotak Hijau Khas (Emerald Callout Box) */
 .emerald-callout-box {
   background: rgba(5, 150, 105, 0.12);

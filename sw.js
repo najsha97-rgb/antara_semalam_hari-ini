@@ -1,4 +1,4 @@
-const CACHE_NAME = 'antara-semalam-v44-dokumen-am-rashi-20261102';
+const CACHE_NAME = 'antara-semalam-v45-dalil-arab-basmallah-20261102';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

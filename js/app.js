@@ -412,7 +412,7 @@
           if (sub.paragraphs) {
             sub.paragraphs.forEach((p, pIdx) => {
               const pClean = p.trim();
-              if (!pClean || pClean.startsWith('<!-- PAGE') || (pClean.startsWith('*<!--') && pClean.endsWith('-->*'))) return;
+              if (!pClean || pClean === '[PEMBUKAAN_RASMI]' || pClean.startsWith('<!-- PAGE') || (pClean.startsWith('*<!--') && pClean.endsWith('-->*'))) return;
 
               const rawForSearch = pClean.replace(/^\[(?:KOTAK_HIJAU|HIJAU)\]\s*/g, '');
               if (rawForSearch.toLowerCase().includes(q)) {
@@ -570,7 +570,14 @@
     if (!targetEl || !query) return;
     const bq = targetEl.querySelector('blockquote');
     if (bq) {
-      bq.innerHTML = highlightMatches(bq.textContent, query);
+      const arEl = bq.querySelector('.ar-quote');
+      const transEl = bq.querySelector('.hikmah-trans-text');
+      if (arEl || transEl) {
+        if (arEl) arEl.innerHTML = highlightMatches(arEl.textContent, query);
+        if (transEl) transEl.innerHTML = highlightMatches(transEl.textContent, query);
+      } else {
+        bq.innerHTML = highlightMatches(bq.textContent, query);
+      }
     } else if (targetEl.classList.contains('emerald-callout-box')) {
       targetEl.querySelectorAll('p').forEach(p => {
         p.innerHTML = highlightMatches(p.textContent, query);
@@ -827,14 +834,47 @@
 
         boxWrapper.appendChild(copyBoxBtn);
         articleContent.appendChild(boxWrapper);
-      } else if (pClean.startsWith('"') || pClean.startsWith('“') || pClean.startsWith('”') || pClean.startsWith('«') || pClean.startsWith('> ')) {
+      } else if (pClean.startsWith('[PEMBUKAAN_RASMI]')) {
+        const openingWrapper = document.createElement('div');
+        openingWrapper.setAttribute('data-pidx', pIdx);
+        openingWrapper.className = 'risalah-opening-banner';
+        openingWrapper.innerHTML = `
+          <div class="ar-basmallah" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+          <div class="ar-tahmid" dir="rtl">الحمد لله و صلى الله على سيدنا محمد الفاتح الخاتم , و على آله و صحبه وسلم تسليما كثيرا</div>
+        `;
+        articleContent.appendChild(openingWrapper);
+      } else if (pClean.startsWith('"') || pClean.startsWith('“') || pClean.startsWith('”') || pClean.startsWith('«') || pClean.startsWith('> ') || pClean.includes('«')) {
         const quoteWrapper = document.createElement('div');
         quoteWrapper.setAttribute('data-pidx', pIdx);
         quoteWrapper.className = 'quote-wrapper';
 
         const quoteBox = document.createElement('blockquote');
         const cleanText = pClean.replace(/^>\s*/, '');
-        quoteBox.textContent = cleanText;
+
+        if (cleanText.includes('«') && cleanText.includes('»')) {
+          // Asingkan teks Arab « ... » bertashkeel (font Amiri Gold, RTL) dan terjemahan rumi (Italic)
+          let htmlContent = cleanText.replace(/«\s*([\s\S]*?)\s*»/g, (match, arText) => {
+            return `<div class="ar-quote" dir="rtl">${arText.trim()}</div>`;
+          });
+
+          const parts = htmlContent.split(/\n\s*\n/);
+          if (parts.length > 1) {
+            const arPart = parts[0];
+            const transPart = parts.slice(1).join('<br><br>').trim();
+            // Formatkan teks terjemahan secara Italic
+            const cleanTrans = transPart
+              .replace(/^\*\\?"?([\s\S]*?)\\?"?\*\s*(\([^)]+\))?$/, (m, t, ref) => {
+                return `<em>"${t.replace(/\\"/g, '"').trim()}"</em> ${ref || ''}`;
+              })
+              .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+
+            quoteBox.innerHTML = `${arPart}<div class="hikmah-trans-text">${cleanTrans}</div>`;
+          } else {
+            quoteBox.innerHTML = htmlContent;
+          }
+        } else {
+          quoteBox.textContent = cleanText;
+        }
 
         const copyQuoteBtn = document.createElement('button');
         copyQuoteBtn.className = 'btn-quote-copy';
