@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="ms">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="theme-color" content="#120d11">
-  <meta name="description" content="Aplikasi Web PWA Rasmi: Antara Semalam dan Hari Ini (بين الأمس واليوم) oleh Al-Imam Asy-Syahid Hasan al-Banna.">
+  <meta name="description"
+    content="Aplikasi Web PWA Rasmi: Antara Semalam dan Hari Ini (بين الأمس واليوم) oleh Al-Imam Asy-Syahid Hasan al-Banna.">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Antara Semalam dan Hari Ini | Imam Hasan al-Banna</title>
 
   <link rel="manifest" href="./manifest.json">
-  <link rel="stylesheet" href="./css/style.css?v=20261102_v47">
+  <link rel="stylesheet" href="./css/style.css?v=20261102_v48">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
   <!-- Top Header -->
@@ -30,7 +35,8 @@
     </div>
 
     <div class="header-controls">
-      <button class="layer-btn-peradaban" id="btnHeaderPeradaban" title="Wawasan Ummah Fadhilah &amp; PBI" onclick="openPeradabanModal()">
+      <button class="layer-btn-peradaban" id="btnHeaderPeradaban" title="Wawasan Ummah Fadhilah &amp; PBI"
+        onclick="openPeradabanModal()">
         <span>🌍</span> <span>Ummah Fadhilah &amp; PBI</span>
       </button>
       <button class="btn-icon" id="btnHeaderSearch" title="Carian Pantas">🔍</button>
@@ -43,7 +49,7 @@
 
   <!-- Main Container -->
   <div class="app-container">
-    
+
     <!-- Left Navigation Sidebar -->
     <aside class="app-sidebar" id="appSidebar">
       <!-- Search -->
@@ -61,7 +67,8 @@
       </div>
 
       <!-- Quick Access: Wawasan Ummah Fadhilah & PBI (Dokumen Am & Khas) -->
-      <div class="sidebar-peradaban-promo" id="sidebarPeradabanBtn" role="button" tabindex="0" title="Buka Wawasan Ummah Fadhilah &amp; Peradaban Baru Islam (PBI)" onclick="openPeradabanModal()">
+      <div class="sidebar-peradaban-promo" id="sidebarPeradabanBtn" role="button" tabindex="0"
+        title="Buka Wawasan Ummah Fadhilah &amp; Peradaban Baru Islam (PBI)" onclick="openPeradabanModal()">
         <div class="peradaban-promo-icon">🌍</div>
         <div class="peradaban-promo-info">
           <span class="peradaban-promo-title">Ummah Fadhilah &amp; PBI</span>
@@ -81,7 +88,7 @@
 
     <!-- Main Reader Panel -->
     <main class="reader-main" id="readerMain">
-      
+
       <!-- Hero Banner -->
       <section class="chapter-hero-banner" id="readerHero">
         <div class="hero-header-bar">
@@ -121,27 +128,32 @@
   </div>
 
   <!-- ================= PERADABAN & UMMAH FADHILAH SPOTLIGHT MODAL ================= -->
-  <div class="peradaban-modal-overlay" id="modalPeradabanSpotlight" style="display: none !important;" onclick="if(event.target===this)closePeradabanModal()">
+  <div class="peradaban-modal-overlay" id="modalPeradabanSpotlight" style="display: none !important;"
+    onclick="if(event.target===this)closePeradabanModal()">
     <div class="peradaban-modal-box">
       <div class="peradaban-modal-header">
         <div class="peradaban-modal-badge">🌍 WAWASAN 100 TAHUN KEDUA (PBI)</div>
-        <button class="icon-btn tarbiah-modal-close" id="btnClosePeradabanModal" onclick="closePeradabanModal()" aria-label="Tutup">✕</button>
+        <button class="icon-btn tarbiah-modal-close" id="btnClosePeradabanModal" onclick="closePeradabanModal()"
+          aria-label="Tutup">✕</button>
       </div>
       <h3 class="peradaban-modal-title">Ummah Fadhilah &amp; Peradaban Baru Islam</h3>
-      <p class="peradaban-modal-subtitle">Sumbangan Risalah Antara Semalam dan Hari Ini (Al-Imam Asy-Syahid Hasan al-Banna) Sebagai Dokumen Induk Gagasan Kebangkitan Ummah</p>
+      <p class="peradaban-modal-subtitle">Sumbangan Risalah Antara Semalam dan Hari Ini (Al-Imam Asy-Syahid Hasan
+        al-Banna) Sebagai Dokumen Induk Gagasan Kebangkitan Ummah</p>
 
       <!-- Pautan Fail Dokumen PDF Sedia Digunakan (Satu Baris Sahaja) -->
       <div class="peradaban-download-panel">
         <div class="download-panel-title">📕 Pautan E-Buku PDF Rasmi (Format Sedia Cetak &amp; Baca):</div>
         <div class="download-buttons-group">
-          <a href="./Gagasan_Ummah_Fadhilah_Kuasa_Nasional_dan_Tetralogi_Al-Rasyid.pdf" target="_blank" class="peradaban-doc-btn pdf-btn">
+          <a href="./Gagasan_Ummah_Fadhilah_Kuasa_Nasional_dan_PBI.pdf" target="_blank"
+            class="peradaban-doc-btn pdf-btn">
             <span class="doc-icon">📕</span>
             <div class="doc-info">
               <span class="doc-main-text">Dokumen Am PDF (.pdf)</span>
               <span class="doc-sub-text">Gagasan Ummah Fadhilah (422 KB)</span>
             </div>
           </a>
-          <a href="./Sumbangan_Antara_Semalam_Dan_Hari_Ini_Dalam_Ummah_Fadhilah_Kuasa_Nasional_dan_PBI.pdf" target="_blank" class="peradaban-doc-btn pdf-btn">
+          <a href="./Sumbangan_Antara_Semalam_Dan_Hari_Ini_Dalam_Ummah_Fadhilah_Kuasa_Nasional_dan_PBI.pdf"
+            target="_blank" class="peradaban-doc-btn pdf-btn">
             <span class="doc-icon">📕</span>
             <div class="doc-info">
               <span class="doc-main-text">Dokumen Khas PDF (.pdf)</span>
@@ -157,20 +169,29 @@
           <div class="peradaban-card-header">
             <span class="peradaban-card-icon">📌</span>
             <div>
-              <h4 style="margin:0; font-size:1.05rem; color:var(--gold-light, #fde047);">Kedudukan Risalah dalam Strategi Peradaban</h4>
-              <span style="font-size:0.75rem; color:#93c5fd;">Dokumen Induk Gagasan (Master Blueprint) Pasca-Kejatuhan Khilafah 1924</span>
+              <h4 style="margin:0; font-size:1.05rem; color:var(--gold-light, #fde047);">Kedudukan Risalah dalam
+                Strategi Peradaban</h4>
+              <span style="font-size:0.75rem; color:#93c5fd;">Dokumen Induk Gagasan (Master Blueprint) Pasca-Kejatuhan
+                Khilafah 1924</span>
             </div>
           </div>
           <p class="peradaban-desc-text">
-            Risalah <strong>Antara Semalam dan Hari Ini</strong> (<em>Bayna al-Ams wa al-Yawm</em>) karangan Al-Imam Asy-Syahid Hasan al-Banna merupakan dokumen induk gagasan kebangkitan umat pasca-kejatuhan Khilafah Islamiah pada tahun 1924. Ia membedah sejarah: <strong>Semalam</strong> (kegemilangan peradaban Islam awal), <strong>Hari Ini</strong> (punca kelemahan dalaman dan cengkaman penjajahan Barat), serta <strong>Esok</strong> (kebangkitan semula di bawah panji Islam).
+            Risalah <strong>Antara Semalam dan Hari Ini</strong> (<em>Bayna al-Ams wa al-Yawm</em>) karangan Al-Imam
+            Asy-Syahid Hasan al-Banna merupakan dokumen induk gagasan kebangkitan umat pasca-kejatuhan Khilafah Islamiah
+            pada tahun 1924. Ia membedah sejarah: <strong>Semalam</strong> (kegemilangan peradaban Islam awal),
+            <strong>Hari Ini</strong> (punca kelemahan dalaman dan cengkaman penjajahan Barat), serta
+            <strong>Esok</strong> (kebangkitan semula di bawah panji Islam).
           </p>
           <p class="peradaban-desc-text" style="color:#cbd5e1; margin-top:0.5rem;">
-            Dalam kerangka membina Kuasa Nasional dan Ummah Fadhilah, risalah ini membekalkan vaksin intelek dan kompas haraki agar gerakan dakwah tidak hanyut menjadi pelaksana kepada sistem politik sekular-liberal, sebaliknya berani membina prototaip watan berdaulat yang mandiri dan berintegriti.
+            Dalam kerangka membina Kuasa Nasional dan Ummah Fadhilah, risalah ini membekalkan vaksin intelek dan kompas
+            haraki agar gerakan dakwah tidak hanyut menjadi pelaksana kepada sistem politik sekular-liberal, sebaliknya
+            berani membina prototaip watan berdaulat yang mandiri dan berintegriti.
           </p>
         </div>
 
         <!-- 2. Lima Teras Sumbangan -->
-        <h4 style="color:var(--gold-light, #fde047); margin:1rem 0 0.5rem 0; font-size:1rem; display:flex; align-items:center; gap:6px;">
+        <h4
+          style="color:var(--gold-light, #fde047); margin:1rem 0 0.5rem 0; font-size:1rem; display:flex; align-items:center; gap:6px;">
           <span>🎯</span> <span>Lima Teras Sumbangan Risalah dalam Kuasa Watan</span>
         </h4>
 
@@ -184,7 +205,9 @@
             </div>
           </div>
           <p class="peradaban-desc-text">
-            Islam merangkumi akidah, ibadah, watan, kewarganegaraan, agama, dan negara. Menolak pemisahan agama daripada urusan siasah kenegaraan dan meletakkan kedaulatan syarak serta kebebasan adil sebagai teras perlembagaan watan (Tonggak 1: Tasawur &amp; Tonggak 3: Kedaulatan Syarak).
+            Islam merangkumi akidah, ibadah, watan, kewarganegaraan, agama, dan negara. Menolak pemisahan agama daripada
+            urusan siasah kenegaraan dan meletakkan kedaulatan syarak serta kebebasan adil sebagai teras perlembagaan
+            watan (Tonggak 1: Tasawur &amp; Tonggak 3: Kedaulatan Syarak).
           </p>
         </div>
 
@@ -198,7 +221,9 @@
             </div>
           </div>
           <p class="peradaban-desc-text">
-            Khilafah sebagai lambang kesatuan dan syiar agung ummah yang wajib diikhtiarkan semula. Menggariskan hierarki penyatuan bermula daripada pembebasan watan, integrasi serantau Nusantara, hingga konfederasi ummah sejagat tanpa assabiyah kepartian sempit (Tonggak 5: Kesatuan Ummah).
+            Khilafah sebagai lambang kesatuan dan syiar agung ummah yang wajib diikhtiarkan semula. Menggariskan
+            hierarki penyatuan bermula daripada pembebasan watan, integrasi serantau Nusantara, hingga konfederasi ummah
+            sejagat tanpa assabiyah kepartian sempit (Tonggak 5: Kesatuan Ummah).
           </p>
         </div>
 
@@ -212,7 +237,9 @@
             </div>
           </div>
           <p class="peradaban-desc-text">
-            Membezakan patriotisme khidmat yang membina dengan taksub kebangsaan rasis yang menindas. Mengimbangi kasih kepada tanah air kelahiran dengan persaudaraan akidah mukmin yang merangkumi setiap jengkal bumi orang beriman (Tonggak 5: Kesatuan Ummah &amp; Tonggak 8: Integriti Sosial).
+            Membezakan patriotisme khidmat yang membina dengan taksub kebangsaan rasis yang menindas. Mengimbangi kasih
+            kepada tanah air kelahiran dengan persaudaraan akidah mukmin yang merangkumi setiap jengkal bumi orang
+            beriman (Tonggak 5: Kesatuan Ummah &amp; Tonggak 8: Integriti Sosial).
           </p>
         </div>
 
@@ -226,7 +253,9 @@
             </div>
           </div>
           <p class="peradaban-desc-text">
-            Membongkar kerapuhan sistem kapitalisme riba dan imperialisme Barat yang tamak. Menggariskan model ekonomi alternatif Ummah Fadhilah yang adil, mandiri, bebas riba, digerakkan oleh institusi wakaf, zakat, keusahawanan beretika, dan jaminan sekuriti makanan watan (Tonggak 4: Kekuatan Ekonomi Beretika).
+            Membongkar kerapuhan sistem kapitalisme riba dan imperialisme Barat yang tamak. Menggariskan model ekonomi
+            alternatif Ummah Fadhilah yang adil, mandiri, bebas riba, digerakkan oleh institusi wakaf, zakat,
+            keusahawanan beretika, dan jaminan sekuriti makanan watan (Tonggak 4: Kekuatan Ekonomi Beretika).
           </p>
         </div>
 
@@ -240,31 +269,40 @@
             </div>
           </div>
           <p class="peradaban-desc-text">
-            Membina kader dan kepimpinan teknokrat berintegriti melalui tiga tonggak: Iman yang mendalam, Pembentukan yang rapi tanpa gopoh, dan Kerja yang berterusan tanpa perdebatan kosong. Menanam keyakinan teguh bahawa hari esok adalah milik Islam (Tonggak 2: Kepimpinan &amp; Tonggak 7: Modal Insan).
+            Membina kader dan kepimpinan teknokrat berintegriti melalui tiga tonggak: Iman yang mendalam, Pembentukan
+            yang rapi tanpa gopoh, dan Kerja yang berterusan tanpa perdebatan kosong. Menanam keyakinan teguh bahawa
+            hari esok adalah milik Islam (Tonggak 2: Kepimpinan &amp; Tonggak 7: Modal Insan).
           </p>
         </div>
 
         <!-- Kunci Amal Pejuang -->
-        <div class="peradaban-card-highlight" style="border-color: rgba(234, 179, 8, 0.4); background: rgba(30, 27, 46, 0.7); margin-top: 0.5rem;">
-          <h4 style="margin:0 0 0.5rem 0; font-size:0.95rem; color:var(--gold-light, #fde047);">🔑 Kunci Amal Pejuang Membina Ummah Fadhilah:</h4>
+        <div class="peradaban-card-highlight"
+          style="border-color: rgba(234, 179, 8, 0.4); background: rgba(30, 27, 46, 0.7); margin-top: 0.5rem;">
+          <h4 style="margin:0 0 0.5rem 0; font-size:0.95rem; color:var(--gold-light, #fde047);">🔑 Kunci Amal Pejuang
+            Membina Ummah Fadhilah:</h4>
           <ul style="margin:0; padding-left:1.2rem; font-size:0.83rem; line-height:1.6; color:#e2e8f0;">
-            <li><strong>Hayati kesyumulan Islam:</strong> Jangan sesekali memisahkan antara nilai ibadah di masjid dengan urusan dasar di pejabat pentadbiran dan masyarakat.</li>
-            <li><strong>Utamakan amal dan kaderisasi:</strong> Fokus kepada pembentukan rapi (<em>takwin daqiq</em>) dan kerja produktif berterusan; tinggalkan polemik retorik politik yang mandul.</li>
-            <li><strong>Tanamkan keyakinan fajar Islam:</strong> Yakin kepada janji Allah bahawa hari esok milik Islam; pimpin watan dengan ukhuwah, integriti, dan pengorbanan tanpa kompromi prinsip.</li>
+            <li><strong>Hayati kesyumulan Islam:</strong> Jangan sesekali memisahkan antara nilai ibadah di masjid
+              dengan urusan dasar di pejabat pentadbiran dan masyarakat.</li>
+            <li><strong>Utamakan amal dan kaderisasi:</strong> Fokus kepada pembentukan rapi (<em>takwin daqiq</em>) dan
+              kerja produktif berterusan; tinggalkan polemik retorik politik yang mandul.</li>
+            <li><strong>Tanamkan keyakinan fajar Islam:</strong> Yakin kepada janji Allah bahawa hari esok milik Islam;
+              pimpin watan dengan ukhuwah, integriti, dan pengorbanan tanpa kompromi prinsip.</li>
           </ul>
         </div>
       </div>
 
-      <div class="tarbiah-modal-footer" style="padding: 0.8rem 1.5rem; display: flex; justify-content: flex-end; border-top: 1px solid rgba(56, 189, 248, 0.2); background: rgba(15, 23, 42, 0.8);">
-        <button class="tarbiah-modal-btn peradaban-close-footer-btn" id="btnPeradabanModalCloseFooter" onclick="closePeradabanModal()">Tutup &amp; Hayati Wawasan</button>
+      <div class="tarbiah-modal-footer"
+        style="padding: 0.8rem 1.5rem; display: flex; justify-content: flex-end; border-top: 1px solid rgba(56, 189, 248, 0.2); background: rgba(15, 23, 42, 0.8);">
+        <button class="tarbiah-modal-btn peradaban-close-footer-btn" id="btnPeradabanModalCloseFooter"
+          onclick="closePeradabanModal()">Tutup &amp; Hayati Wawasan</button>
       </div>
     </div>
   </div>
 
   <!-- PWA Data Script -->
-  <script src="./data/antara_semalam_data.js?v=20261102_v47"></script>
+  <script src="./data/antara_semalam_data.js?v=20261102_v48"></script>
   <!-- Main Application Script -->
-  <script src="./js/app.js?v=20261102_v47"></script>
+  <script src="./js/app.js?v=20261102_v48"></script>
 
   <!-- Service Worker Registration -->
   <script>
@@ -293,5 +331,5 @@
   </script>
 
 </body>
-</html>
 
+</html>
