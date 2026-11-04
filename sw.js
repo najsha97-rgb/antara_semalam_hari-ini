@@ -1,4 +1,4 @@
-const CACHE_NAME = 'antara-semalam-v49-khat-almarai-dan-syakl-20261104';
+const CACHE_NAME = 'antara-semalam-v50-tasykil-tajuk-bab1-12-20261104';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

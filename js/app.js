@@ -133,7 +133,7 @@
     const sub = ch.subtopics[state.currentSubtopic];
     if (!sub) return;
 
-    let textToCopy = `📖 ANTARA SEMALAM DAN HARI INI (بين الأمس واليوم)\n`;
+    let textToCopy = `📖 ANTARA SEMALAM DAN HARI INI (بَيْنَ الْأَمْسِ وَالْيَوْمِ)\n`;
     textToCopy += `Al-Imam Asy-Syahid Hasan al-Banna\n`;
     textToCopy += `────────────────────────────────\n`;
     textToCopy += `${ch.number}: ${ch.title.toUpperCase()}\n`;
@@ -159,7 +159,7 @@
 
     let content = `========================================================================\n`;
     content += `        INTISARI ILMIAH: ANTARA SEMALAM DAN HARI INI                    \n`;
-    content += `        (Bayna al-Amsi wa al-Yawm - بين الأمس واليوم)                   \n`;
+    content += `        (Bayna al-Amsi wa al-Yawm - بَيْنَ الْأَمْسِ وَالْيَوْمِ)                   \n`;
     content += `   Ringkasan 27 Prinsip Kebangkitan & Penyelamat Umat Islam             \n`;
     content += `        Pengarang: Al-Imam Asy-Syahid Hasan al-Banna                    \n`;
     content += `========================================================================\n\n`;
@@ -791,6 +791,7 @@
 
     heroChBadge.textContent = `${ch.number} • SUBTOPIK ${state.currentSubtopic + 1}`;
     heroMainTitle.textContent = sub.title;
+    heroArabicTitle.className = 'hero-arabic-title';
     heroArabicTitle.textContent = ch.title_ar || '';
 
     // Render Perenggan
@@ -913,6 +914,7 @@
   function renderRingkasanView() {
     heroChBadge.textContent = 'RINGKASAN EKSEKUTIF';
     heroMainTitle.textContent = '27 Prinsip Kebangkitan & Penyelamat';
+    heroArabicTitle.className = 'hero-arabic-title hero-arabic-almarai';
     heroArabicTitle.textContent = 'خُلَاصَةُ الرِّسَالَةِ: دَعْوَتُنَا دَعْوَةُ بَعْثٍ وَإِنْقَاذٍ';
     articleContent.style.display = 'none';
     hikmahSection.style.display = 'none';
@@ -1026,6 +1028,7 @@
   function renderHikmahView() {
     heroChBadge.textContent = 'KOLEKSI EMAS DAKWAH';
     heroMainTitle.textContent = 'Mutiara Hikmah Imam Hasan al-Banna';
+    heroArabicTitle.className = 'hero-arabic-title';
     heroArabicTitle.textContent = 'دُرَرُ الْحِكْمَةِ وَالْجِهَادِ';
     articleContent.style.display = 'none';
     ringkasanSection.style.display = 'none';

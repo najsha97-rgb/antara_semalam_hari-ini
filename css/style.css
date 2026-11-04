@@ -31,7 +31,7 @@
   
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-display: 'Outfit', sans-serif;
-  --font-arabic: 'Almarai', 'Amiri', serif;
+  --font-arabic: 'Amiri', 'Traditional Arabic', serif;
   
   --sidebar-width: 340px;
   --header-height: 70px;
@@ -482,13 +482,19 @@ body {
 }
 
 .hero-arabic-title {
-  font-family: 'Almarai', var(--font-arabic), sans-serif;
-  font-size: 1.55rem;
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--gold-primary);
   margin-bottom: 1rem;
-  line-height: 1.55;
+  line-height: 1.7;
   direction: rtl;
+}
+
+.hero-arabic-title.hero-arabic-almarai {
+  font-family: 'Almarai', sans-serif;
+  font-size: 1.55rem;
+  line-height: 1.55;
 }
 
 .article-content {

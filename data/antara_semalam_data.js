@@ -1,7 +1,7 @@
 window.ANTARA_SEMALAM_DATA = {
   "metadata": {
     "title": "Antara Semalam dan Hari Ini",
-    "title_ar": "بين الأمس واليوم",
+    "title_ar": "بَيْنَ الْأَمْسِ وَالْيَوْمِ",
     "author": "Al-Imam Asy-Syahid Hasan al-Banna",
     "version": "1.0.2",
     "total_chapters": 12,
@@ -13,7 +13,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab1",
       "number": "BAB 1",
       "title": "Risalah Nabi yang Amanah",
-      "title_ar": "رسالة النبي الأمين",
+      "title_ar": "رِسَالَةُ النَّبِيِّ الْأَمِينِ",
       "subtopics": [
         {
           "id": "c1_s0",
@@ -34,7 +34,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab2",
       "number": "BAB 2",
       "title": "Manhaj Al-Quran dalam Memperbaiki Masyarakat",
-      "title_ar": "منهاج القرآن في إصلاح المجتمع",
+      "title_ar": "مِنْهَاجُ الْقُرْآنِ فِي إِصْلَاحِ الْمُجْتَمَعِ",
       "subtopics": [
         {
           "id": "c2_s0",
@@ -71,7 +71,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab3",
       "number": "BAB 3",
       "title": "Pelan Tindakan Islam",
-      "title_ar": "الشعائر العملية لهذا النظام",
+      "title_ar": "الشَّعَائِرُ الْعَمَلِيَّةُ لِهَذَا النِّظَامِ",
       "subtopics": [
         {
           "id": "c3_s0",
@@ -108,7 +108,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab4",
       "number": "BAB 4",
       "title": "Negara Islam yang Pertama & Perkembangannya",
-      "title_ar": "الدولة الإسلامية الأولى",
+      "title_ar": "الدَّوْلَةُ الْإِسْلَامِيَّةُ الْأُولَى",
       "subtopics": [
         {
           "id": "c4_s0",
@@ -130,7 +130,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab5",
       "number": "BAB 5",
       "title": "Faktor-Faktor yang Menghancurkan Negara Islam",
-      "title_ar": "عوامل تحلل الدولة الإسلامية",
+      "title_ar": "عَوَامِلُ تَحَلُّلِ الدَّوْلَةِ الْإِسْلَامِيَّةِ",
       "subtopics": [
         {
           "id": "c5_s0",
@@ -180,7 +180,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab6",
       "number": "BAB 6",
       "title": "Pertarungan Politik Melawan Penjajahan",
-      "title_ar": "الصراع السياسي",
+      "title_ar": "الصِّرَاعُ السِّيَاسِيُّ",
       "subtopics": [
         {
           "id": "c6_s1",
@@ -256,7 +256,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab7",
       "number": "BAB 7",
       "title": "Pertarungan Sosial & Keruntuhan Nilai Barat",
-      "title_ar": "الصراع الاجتماعي",
+      "title_ar": "الصِّرَاعُ الِاجْتِمَاعِيُّ",
       "subtopics": [
         {
           "id": "c7_s0",
@@ -291,7 +291,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab8",
       "number": "BAB 8",
       "title": "Cengkaman Kebendaan ke atas Negeri Islam",
-      "title_ar": "العدوان المادي على بلاد الإسلام",
+      "title_ar": "الْعُدْوَانُ الْمَادِّيُّ عَلَى بِلَادِ الْإِسْلَامِ",
       "subtopics": [
         {
           "id": "c8_s0",
@@ -327,7 +327,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab9",
       "number": "BAB 9",
       "title": "Dakwah Kita: Dakwah Kebangkitan & Menyelamat",
-      "title_ar": "دعوتنا دعوة بعث وإنقاذ",
+      "title_ar": "دَعْوَتُنَا دَعْوَةُ بَعْثٍ وَإِنْقَاذٍ",
       "subtopics": [
         {
           "id": "c9_s0",
@@ -447,7 +447,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab10",
       "number": "BAB 10",
       "title": "Wasiat Terakhir Buat Para Pendakwah",
-      "title_ar": "وصية",
+      "title_ar": "وَصِيَّةٌ",
       "subtopics": [
         {
           "id": "c10_s0",
@@ -467,7 +467,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab11",
       "number": "BAB 11",
       "title": "Kewajipan-Kewajipan Pejuang Islam",
-      "title_ar": "واجبات",
+      "title_ar": "وَاجِبَاتٌ",
       "subtopics": [
         {
           "id": "c11_s0",
@@ -494,7 +494,7 @@ window.ANTARA_SEMALAM_DATA = {
       "id": "bab12",
       "number": "BAB 12",
       "title": "Ringkasan 27 Prinsip Risalah & Penutup",
-      "title_ar": "خلاصة الرسالة والختام",
+      "title_ar": "خُلَاصَةُ الرِّسَالَةِ وَالْخِتَامُ",
       "subtopics": [
         {
           "id": "c12_s0",
