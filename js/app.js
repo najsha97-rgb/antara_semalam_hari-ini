@@ -913,7 +913,7 @@
   function renderRingkasanView() {
     heroChBadge.textContent = 'RINGKASAN EKSEKUTIF';
     heroMainTitle.textContent = '27 Prinsip Kebangkitan & Penyelamat';
-    heroArabicTitle.textContent = 'خلاصة الرسالة: دعوتنا دعوة بعث وإنقاذ';
+    heroArabicTitle.textContent = 'خُلَاصَةُ الرِّسَالَةِ: دَعْوَتُنَا دَعْوَةُ بَعْثٍ وَإِنْقَاذٍ';
     articleContent.style.display = 'none';
     hikmahSection.style.display = 'none';
     ringkasanSection.style.display = 'block';
@@ -1026,7 +1026,7 @@
   function renderHikmahView() {
     heroChBadge.textContent = 'KOLEKSI EMAS DAKWAH';
     heroMainTitle.textContent = 'Mutiara Hikmah Imam Hasan al-Banna';
-    heroArabicTitle.textContent = 'درر الحكمة والجهاد';
+    heroArabicTitle.textContent = 'دُرَرُ الْحِكْمَةِ وَالْجِهَادِ';
     articleContent.style.display = 'none';
     ringkasanSection.style.display = 'none';
     hikmahSection.style.display = 'block';

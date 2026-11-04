@@ -1,4 +1,4 @@
-const CACHE_NAME = 'antara-semalam-v48-pdf-dokumen-am-20261102';
+const CACHE_NAME = 'antara-semalam-v49-khat-almarai-dan-syakl-20261104';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

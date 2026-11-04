@@ -3,6 +3,8 @@
    Tema: Emerald, Gold & Soft Rose Pink Haraki Edition
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap');
+
 :root {
   --bg-primary: #120d11;
   --bg-secondary: #1a1217;
@@ -29,7 +31,7 @@
   
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-display: 'Outfit', sans-serif;
-  --font-arabic: 'Amiri', serif;
+  --font-arabic: 'Almarai', 'Amiri', serif;
   
   --sidebar-width: 340px;
   --header-height: 70px;
@@ -480,10 +482,13 @@ body {
 }
 
 .hero-arabic-title {
-  font-family: var(--font-arabic);
-  font-size: 1.7rem;
+  font-family: 'Almarai', var(--font-arabic), sans-serif;
+  font-size: 1.55rem;
+  font-weight: 700;
   color: var(--gold-primary);
   margin-bottom: 1rem;
+  line-height: 1.55;
+  direction: rtl;
 }
 
 .article-content {
